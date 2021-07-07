@@ -20,6 +20,7 @@ import allure
 logger = Logger()
 from selenium import webdriver
 
+
 from framework.browser_engine import BrowserEngine
 
 
@@ -31,9 +32,9 @@ class BasePage(object):
     def __init__(self):
 
         from selenium import webdriver
-        self.option = webdriver.ChromeOptions()
-        self.option.add_argument(
-            rf'--user-data-dir=C:\Users\A\AppData\Local\Google\Chrome\UserData\Default')  # 设置成用户自己的数据目录
+        # self.option = webdriver.ChromeOptions()
+        # self.option.add_argument(
+        #     rf'--user-data-dir=C:\Users\A\AppData\Local\Google\Chrome\UserData\Default')  # 设置成用户自己的数据目录
         # self.option.add_argument(
         #     rf'--user-data-dir=C:\Users\ASUS\AppData\Local\Google\Chrome\UserData\Default')  # 设置成用户自己的数据目录
         #
@@ -67,7 +68,8 @@ class BasePage(object):
         # elif browser == "IE":
         #     driver = webdriver.Ie(self.ie_driver_path)
         #     logger.info("Starting IE browser.")
-        self.driver = webdriver.Chrome(self.chrome_driver_path, options=self.option)
+        # self.driver = webdriver.Chrome(self.chrome_driver_path, options=self.option)
+        self.driver = webdriver.Chrome(self.chrome_driver_path)
         # url="https://www.nhtest.com/"
         # url=rf"{url}"
         # self.driver.delete_all_cookies()
@@ -235,9 +237,9 @@ class BasePage(object):
             if text == None:
                 text = random.randint(1, 9999)
 
-        el = self.find_element(selector)
-        el.clear()
         try:
+            el = self.find_element(selector)
+            el.clear()
             el.send_keys(text)
             self.get_windows_img('截图')
             logger.info("Had type \' %s \' in inputBox" % text)
@@ -245,11 +247,12 @@ class BasePage(object):
             logger.error("Failed to type in input box with %s" % e)
             self.get_windows_img('错误截图')
 
+
     # 清除文本框
     def clear(self, selector):
 
-        el = self.find_element(selector)
         try:
+            el = self.find_element(selector)
             el.clear()
             logger.info("Clear text in input box before typing.")
         except NameError as e:
@@ -260,18 +263,20 @@ class BasePage(object):
     def click(self, selector):
 
         self.get_windows_img('截图')
-        el = self.find_element(selector)
+
         try:
+            el = self.find_element(selector)
             el.click()
             logger.info(f"The element {selector} was clicked.")
-        except:
-
             try:
                 self.driver.execute_script('arguments[0].scrollIntoView();', el)
                 ActionChains(self.driver).move_to_element(el).click().perform()
             except EnvironmentError as e:
                 logger.error(f"Failed to click the element with {e}")
                 self.get_windows_img('错误截图')
+        except NameError as e:
+            logger.error("Failed to type in input box with %s" % e)
+            self.get_windows_img('错误截图')
 
     #   或者网页标题
     def get_page_title(self):
@@ -284,15 +289,17 @@ class BasePage(object):
         logger.info("Sleep for %d seconds" % seconds)
 
     def move_to_element(self, selector):
-
-        el = self.find_element(selector)
-        ActionChains(self.driver).move_to_element(el).perform()
+        try:
+            el = self.find_element(selector)
+            ActionChains(self.driver).move_to_element(el).perform()
+        except NameError as e:
+            logger.error("Failed to type in input box with %s" % e)
+            self.get_windows_img('错误截图')
 
     def move_to_elements(self, selector, tag):
 
         selector_value = selector.split('=>')[1]
         dr = self.driver
-
         el = dr.find_element_by_xpath(selector_value).find_elements_by_tag_name(tag)
 
         for i in el:
@@ -301,7 +308,12 @@ class BasePage(object):
             time.sleep(2)
 
     def enter(self):
-        ActionChains(self.driver).key_down(Keys.ENTER).key_up(Keys.ENTER).perform()
+        try:
+            ActionChains(self.driver).key_down(Keys.ENTER).key_up(Keys.ENTER).perform()
+        except NameError as e:
+            logger.error("Failed to type in input box with %s" % e)
+        finally:
+            self.get_windows_img('错误截图')
 
     #   进入框架
     def switch_to_frame(self, selector):
