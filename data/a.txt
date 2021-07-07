@@ -61,28 +61,20 @@
 点击首页,click,xpath=>//*[@id="g-head"]/div/p/a
 查看首页的Default Category,move_to_elements,xpath=>//*[@id="navigationShowIndex"]/p,div
 
-无安全登录操作
+无安全登录操作-生成订单
 步骤名称,操作,元素,值,
 打开网页,open_browser,https://www.nhtest.com/en/customer/account/login,
+高级设置,click,xpath=>//*[@id="details-button"],
+继续,click,xpath=>//*[@id="proceed-link"],
 输入账号,send_keys,xpath=>//*[@id="email"],2770488802@qq.com
 输入密码,send_keys,xpath=>//*[@id="password"],123456
 点击登录,click,xpath=>//*[@id="saveButton"],
-
-加入购物车
-步骤名称,操作,元素,值,
-打开网页,open_browser,https://www.nhtest.com/en/customer,
 跳到首页,click,xpath=>//*[@id="g-head"]/div/p/a,
 跳到我的页面,click,xpath=>/html/body/div[1]/div/div/a[1],
 跳到my order页面,click,xpath=>/html/body/div[6]/div[1]/div/ul/li[3]/a,
 点击我的第一个订单,click,xpath=>/html/body/div[6]/div[2]/div/div[2]/table/tbody/tr[1]/td[1],
 勾选全部按钮,click,xpath=>//*[@id="selectAllCheckbox"],
 点击加入购物车,click,xpath=>/html/body/div[6]/div/div/div[2]/div[1]/div[1]/div/button,
-点击购物车图标,click,xpath=>//*[@id="J_HeadCart"]/div/a,
-
-生成订单
-步骤名称,操作,元素,值,
-打开网页,open_browser,https://www.nhtest.com/en/customer,
-跳到首页,click,xpath=>//*[@id="g-head"]/div/p/a,
 点击购物车图标,click,xpath=>//*[@id="J_HeadCart"]/div/a,
 点击checkout now,click,xpath=>//*[@id="J_Total_Cart"]/div[2]/div[2]/a,
 点击pay now,click,xpath=>//*[@id="orderForm"]/div/div[3]/div[2]/div[15]/button,
