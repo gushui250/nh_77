@@ -1,0 +1,11 @@
+2021-07-07 13:59:45,075 logger.py[line:50] INFO Open url: https://www.nhtest.com/en/customer/account/login
+2021-07-07 13:59:45,198 logger.py[line:50] INFO Maximize the current window.
+2021-07-07 13:59:45,557 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-07 13:59:45,557 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-07 13:59:48,682 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-07 13:59:48,683 logger.py[line:53] ERROR Failed to type in input box with Please enter a valid type of targeting elements.
+2021-07-07 13:59:48,794 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-07 13:59:51,916 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-07 13:59:51,925 logger.py[line:50] INFO Had find the element //*[@id="proceed-link"] successful 
+2021-07-07 14:00:02,095 logger.py[line:50] INFO Closing and quit the browser.
+2021-07-07 14:00:02,096 logger.py[line:50] INFO Now, Close and quit the browser.

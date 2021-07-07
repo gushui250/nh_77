@@ -1,0 +1,10 @@
+2021-07-07 16:04:18,698 logger.py[line:50] INFO Open url: https://www.baidu.com
+2021-07-07 16:04:18,850 logger.py[line:50] INFO Maximize the current window.
+2021-07-07 16:04:19,345 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-07 16:04:19,347 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-07 16:04:19,350 logger.py[line:50] INFO Current page title is 百度一下，你就知道.
+2021-07-07 16:04:52,882 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/div/a[1] successful 
+2021-07-07 16:04:52,898 logger.py[line:50] INFO Current page title is Wholesale Jewelry & Wholesale Accessories, Fashion Jewelry Supplier - Nihaojewelry.
+2021-07-07 16:05:00,437 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/div/a[1] successful 
+2021-07-07 16:05:01,803 logger.py[line:50] INFO The element xpath=>/html/body/div[1]/div/div/a[1] was clicked.
+2021-07-07 16:05:01,812 logger.py[line:50] INFO Current page title is Customer Login.

@@ -1,0 +1,14 @@
+2021-07-07 14:09:43,369 logger.py[line:50] INFO Open url: https://www.nhtest.com/en/customer/account/login
+2021-07-07 14:09:43,486 logger.py[line:50] INFO Maximize the current window.
+2021-07-07 14:09:43,796 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-07 14:09:43,797 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-07 14:09:46,912 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-07 14:09:46,921 logger.py[line:50] INFO Had find the element //*[@id="details-button"] successful 
+2021-07-07 14:09:47,949 logger.py[line:50] INFO Sleep for 1 seconds
+2021-07-07 14:09:47,949 logger.py[line:50] INFO The element xpath=>//*[@id="details-button"] was clicked.
+2021-07-07 14:09:51,330 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-07 14:09:51,337 logger.py[line:50] INFO Had find the element //*[@id="proceed-link"] successful 
+2021-07-07 14:09:54,221 logger.py[line:50] INFO Sleep for 1 seconds
+2021-07-07 14:09:54,221 logger.py[line:50] INFO The element xpath=>//*[@id="proceed-link"] was clicked.
+2021-07-07 14:09:54,348 logger.py[line:50] INFO Closing and quit the browser.
+2021-07-07 14:09:54,349 logger.py[line:50] INFO Now, Close and quit the browser.

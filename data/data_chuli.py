@@ -124,7 +124,7 @@ if __name__ == "__main__":
         txt_excel()
     except:
         pass
-    print(Data_().data03(4,5,6))
+    print(Data_().data03(4,5))
 
 
 

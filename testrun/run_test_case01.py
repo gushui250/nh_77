@@ -19,6 +19,3 @@ pytest.main(['-s', 'test_case01.py', '--alluredir', '../temp'])
 # print(allure_path)
 os.system(fr'{allure_path} generate ../temp -o ../report --clean')
 
-
-
-

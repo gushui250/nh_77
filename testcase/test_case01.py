@@ -182,10 +182,10 @@ class Test_BaiduSearch(object):
 
 
     # @allure.story(Data_().data03(4, 5, 6)[story_num][0:]['story'])
-    @pytest.mark.parametrize('params', list(Data_().data03(4, 5, 6)),ids=Data_().story(4,5,6))
+    @pytest.mark.parametrize('params', list(Data_().data03(4)),ids=Data_().story(4))
     def test01(self, params):
         '''
-        登录case用例
+        生成订单用例
         :param params:
         :return:
         '''
@@ -199,7 +199,6 @@ class Test_BaiduSearch(object):
                     print(cases)
                     func(*cases)
                     time.sleep(3)
-
 
 
 if __name__ == '__main__':

@@ -48,9 +48,9 @@ class Test_BaiduSearch(object):
     def test_nhshangcheng(self):
         #  优化建议：设置购物数量，页面跳转时间，增加报错说明，优化查找元素，优化报错后的处理方式，设置截图，参考博客说明优化框架，可以加入数据库来对比操作步骤有没有错误
 
-        test = BasePage(self.driver)
+        test = BasePage()
         test.wait(15)  # 隐性等待20s
-
+        test.open_browser('https://www.nhtest.com')
         # 进入主页
         try:
             test.click('xpath=>//*[@id="details-button"]')
@@ -69,6 +69,7 @@ class Test_BaiduSearch(object):
         time.sleep(2)
         test.send_keys('xpath=>//*[@id="email"]', '2770488802@qq.com')
         time.sleep(2)
+
         test.send_keys('xpath=>//*[@id="password"]', '123456')
         time.sleep(2)
         test.click('id=>saveButton')

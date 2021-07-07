@@ -1,0 +1,6 @@
+2021-07-07 16:02:24,386 logger.py[line:50] INFO Open url: https://www.baidu.com
+2021-07-07 16:02:24,509 logger.py[line:50] INFO Maximize the current window.
+2021-07-07 16:02:25,062 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-07 16:02:25,063 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-07 16:02:25,068 logger.py[line:50] INFO Current page title is 百度一下，你就知道.
+2021-07-07 16:03:00,450 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/div/a[1] successful 

@@ -63,11 +63,14 @@
 
 无安全登录操作-生成订单
 步骤名称,操作,元素,值,
-打开网页,open_browser,https://www.nhtest.com/en/customer/account/login,
+打开网页,open_browser,https://www.nhjewelry.com/13/other-marketing/mall/orderSettlementInfo,
 高级设置,click,xpath=>//*[@id="details-button"],
 继续,click,xpath=>//*[@id="proceed-link"],
-输入账号,send_keys,xpath=>//*[@id="email"],2770488802@qq.com
-输入密码,send_keys,xpath=>//*[@id="password"],123456
+打开网页,open_url,https://www.nhtest.com/en/customer/account/login,
+高级设置,click,xpath=>//*[@id="details-button"],
+继续,click,xpath=>//*[@id="proceed-link"],
+输入账号,send_keys,xpath=>//*[@id="email"],2770488802@qq.com,
+输入密码,send_keys,xpath=>//*[@id="password"],123456,
 点击登录,click,xpath=>//*[@id="saveButton"],
 跳到首页,click,xpath=>//*[@id="g-head"]/div/p/a,
 跳到我的页面,click,xpath=>/html/body/div[1]/div/div/a[1],
@@ -81,5 +84,13 @@
 选择西联支付,click,xpath=>/html/body/div[4]/div[1]/div[1]/div[9]/div[1]/i,
 点击pay now,click,xpath=>//*[@id="payJump"],
 点击确定,click,xpath=>//*[@id="J_Card_Modal"]/div/span[1],
+得到账号,get,xpath=>/html/body/div[4]/div[1]/div[2]/div/div[1]/p[2],账号.txt
 
 后台设置
+步骤名称,操作,元素,值,
+打开网页,open_browser,https://www.nhtest.com/en/customer/account/login,
+高级设置,click,xpath=>//*[@id="details-button"],
+继续,click,xpath=>//*[@id="proceed-link"],
+打开网页,open_browser,https://www.nhjewelry.com/13/other-marketing/mall/orderSettlementInfo,
+高级设置,click,xpath=>//*[@id="details-button"],
+继续,click,xpath=>//*[@id="proceed-link"],
