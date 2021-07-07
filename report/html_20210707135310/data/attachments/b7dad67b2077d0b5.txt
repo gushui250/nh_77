@@ -1,0 +1,12 @@
+INFO     root:logger.py:50 Open url: https://www.nhtest.com/en/customer/account/login
+INFO     root:logger.py:50 Maximize the current window.
+INFO     root:logger.py:50 Had take screenshot and save to folder : \screenshots
+INFO     root:logger.py:50 Set implicitly wait 10 seconds.
+INFO     root:logger.py:50 Had take screenshot and save to folder : \screenshots
+INFO     root:logger.py:50 Had find the element //*[@id="details-button"] successful 
+INFO     root:logger.py:50 The element xpath=>//*[@id="details-button"] was clicked.
+INFO     root:logger.py:50 Had take screenshot and save to folder : \screenshots
+INFO     root:logger.py:50 Had find the element //*[@id="proceed-link"] successful 
+INFO     root:logger.py:50 The element xpath=>//*[@id="proceed-link"] was clicked.
+INFO     root:logger.py:50 Closing and quit the browser.
+INFO     root:logger.py:50 Now, Close and quit the browser.

@@ -1,0 +1,8 @@
+2021-07-07 15:33:19,549 logger.py[line:50] INFO Open url: https://www.baidu.com
+2021-07-07 15:33:19,666 logger.py[line:50] INFO Maximize the current window.
+2021-07-07 15:33:20,298 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-07 15:33:20,299 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-07 15:33:51,048 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/div/a[1] successful 
+2021-07-07 15:33:52,451 logger.py[line:50] INFO The element xpath=>/html/body/div[1]/div/div/a[1] was clicked.
+2021-07-07 15:34:00,222 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/div/a[1] successful 
+2021-07-07 15:34:00,812 logger.py[line:50] INFO The element xpath=>/html/body/div[1]/div/div/a[1] was clicked.

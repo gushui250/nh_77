@@ -20,7 +20,6 @@ import allure
 logger = Logger()
 from selenium import webdriver
 
-
 from framework.browser_engine import BrowserEngine
 
 
@@ -41,6 +40,7 @@ class BasePage(object):
         dir = os.path.dirname(os.path.abspath('.'))  # 注意相对路径获取方法
         self.chrome_driver_path = dir + '/tools/chromedriver.exe'
         ie_driver_path = dir + '/tools/IEDriverServer.exe'
+        self.num = 1  # 计数器
 
         # self.driver = webdriver.Chrome(chrome_driver_path, options=option)
 
@@ -48,27 +48,6 @@ class BasePage(object):
     # read the browser type from config.ini file, return the driver
 
     def open_browser(self, url):
-        # config = configparser.ConfigParser()
-        # # file_path = os.path.dirname(os.getcwd()) + '/config/config.ini'
-        # file_path = os.path.dirname(os.path.abspath('.')) + '/config/config.ini'
-        # # config.read(file_path)
-        # config.read(file_path,encoding='UTF-8') # 如果代码有中文注释，用这个，不然报解码错误
-        #
-        # browser = config.get("browserType", "browserName")
-        # logger.info("You had select %s browser." % browser)
-        # url = config.get("testServer", "URL")
-        # logger.info("The test server url is: %s" % url)
-        #
-        # if browser == "Firefox":
-        #     driver = webdriver.Firefox()
-        #     logger.info("Starting firefox browser.")
-        # elif browser == "Chrome":
-        #     driver = webdriver.Chrome(self.chrome_driver_path)
-        #     logger.info("Starting Chrome browser.")
-        # elif browser == "IE":
-        #     driver = webdriver.Ie(self.ie_driver_path)
-        #     logger.info("Starting IE browser.")
-        # self.driver = webdriver.Chrome(self.chrome_driver_path, options=self.option)
         self.driver = webdriver.Chrome(self.chrome_driver_path)
         # url="https://www.nhtest.com/"
         # url=rf"{url}"
@@ -82,40 +61,16 @@ class BasePage(object):
         logger.info("Set implicitly wait 10 seconds.")
         # return self.driver
 
-    # def open_salf_browser(self,url):
-    #     # config = configparser.ConfigParser()
-    #     # # file_path = os.path.dirname(os.getcwd()) + '/config/config.ini'
-    #     # file_path = os.path.dirname(os.path.abspath('.')) + '/config/config.ini'
-    #     # # config.read(file_path)
-    #     # config.read(file_path,encoding='UTF-8') # 如果代码有中文注释，用这个，不然报解码错误
-    #     #
-    #     # browser = config.get("browserType", "browserName")
-    #     # logger.info("You had select %s browser." % browser)
-    #     # url = config.get("testServer", "URL")
-    #     # logger.info("The test server url is: %s" % url)
-    #     #
-    #     # if browser == "Firefox":
-    #     #     driver = webdriver.Firefox()
-    #     #     logger.info("Starting firefox browser.")
-    #     # elif browser == "Chrome":
-    #     #     driver = webdriver.Chrome(self.chrome_driver_path)
-    #     #     logger.info("Starting Chrome browser.")
-    #     # elif browser == "IE":
-    #     #     driver = webdriver.Ie(self.ie_driver_path)
-    #     #     logger.info("Starting IE browser.")
-    #
-    #     # url="https://www.nhtest.com/"
-    #     # url=rf"{url}"
-    #
-    #     # self.safe_driver.delete_all_cookies()
-    #     self.safe_driver.get(url)
-    #     logger.info("Open url: %s" % url)
-    #     self.safe_driver.maximize_window()
-    #     logger.info("Maximize the current window.")
-    #     self.safe_driver.implicitly_wait(10)
-    #     self.get_windows_img('截图')
-    #     logger.info("Set implicitly wait 10 seconds.")
-    #     # return self.driver
+    # 打开链接
+    def open_url(self, url):
+
+        js = f"window.open('{url}');"  # 新窗口打开链接
+        self.driver.execute_script(js)
+        toHandle = self.driver.window_handles
+        self.driver.switch_to.window(toHandle[-1])
+
+        # #获取当前页面的句柄
+        # print(dr.current_window_handle)
 
     def quit_browser(self):
         logger.info("Now, Close and quit the browser.")
@@ -161,20 +116,6 @@ class BasePage(object):
         with open(f'{screen_name}', 'rb') as f:
             file = f.read()
         allure.attach(file, IMG, allure.attachment_type.PNG)  # 截图到测试报告中
-
-    # def save_screencap(self, IMG):
-    #     '''
-    #     截图，并保存到测试报告里
-    #     :return:
-    #     '''
-    #     now = time.strftime('%Y-%m-%d-%H-%M-%S')
-    #     screencap_png = f'{now}_{IMG}.png'
-    #     self.driver.get_screenshot_as_file(f'../data/img/{screencap_png}')
-    #
-    #     with open(f'../data/img/{screencap_png}', 'rb') as f:
-    #         file = f.read()
-    #     allure.attach(file, IMG, allure.attachment_type.PNG)  # 截图到测试报告中
-    #     logging.info('页面截图保存在:{}'.format(f'../data/img/{screencap_png}'))
 
     # 定位元素方法
     def find_element(self, selector):
@@ -247,7 +188,6 @@ class BasePage(object):
             logger.error("Failed to type in input box with %s" % e)
             self.get_windows_img('错误截图')
 
-
     # 清除文本框
     def clear(self, selector):
 
@@ -259,29 +199,45 @@ class BasePage(object):
             logger.error("Failed to clear in input box with %s" % e)
             self.get_windows_img('错误截图')
 
+
     # 点击元素
     def click(self, selector):
 
-        self.get_windows_img('截图')
-
+        # self.get_windows_img('截图')
         try:
             el = self.find_element(selector)
             el.click()
             logger.info(f"The element {selector} was clicked.")
+
+        except NameError as e:
+            logger.error("Failed to type in input box with %s" % e)
+            # self.get_windows_img('错误截图')
             try:
                 self.driver.execute_script('arguments[0].scrollIntoView();', el)
                 ActionChains(self.driver).move_to_element(el).click().perform()
             except EnvironmentError as e:
                 logger.error(f"Failed to click the element with {e}")
                 self.get_windows_img('错误截图')
-        except NameError as e:
-            logger.error("Failed to type in input box with %s" % e)
-            self.get_windows_img('错误截图')
 
-    #   或者网页标题
+    #   获取网页标题
     def get_page_title(self):
         logger.info(f"Current page title is {self.driver.title}.")
         return self.driver.title
+
+    # 获取元素内容
+    def get_txt(self, selector, txt=None):
+        '''
+        :param selector:
+        :param txt:
+        :return:
+        '''
+        try:
+            el = self.find_element(selector)
+            dir = os.path.dirname(os.path.abspath("."))
+            with open(rf'{dir}\data\{txt}', 'w', encoding='utf-8') as f:
+                f.write(el.text)
+        except NameError as e:
+            logger.error("Failed to get_txt with %s" % e)
 
     @staticmethod
     def sleep(seconds):
@@ -364,9 +320,17 @@ class Del(object):
 
     # del_fuzhu('temp')
 
-# a=BasePage()
+
+# a = BasePage()
 # a.open_browser(rf'https://www.baidu.com')
-# a.sleep(2)
-# a.close()
-# a.sleep(5)
-# a.open_browser(rf'https://www.nihaojewelry.com')
+# # a.sleep(2)
+# # a.close()
+# # a.sleep(5)
+# print(a.get_page_title())
+# a.open_url(rf'https://www.nihaojewelry.com')
+# # a.click('xpath=>/html/body/div[1]/div/div/a[1]')
+# a.get_txt('xpath=>/html/body/div[1]/div/div/a[1]','标题.txt')
+# print(a.get_page_title())
+# a.open_url(rf'https://www.nihaojewelry.com')
+# a.click('xpath=>/html/body/div[1]/div/div/a[1]')
+# print(a.get_page_title())

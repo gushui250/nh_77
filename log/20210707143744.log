@@ -1,0 +1,22 @@
+2021-07-07 14:37:47,424 logger.py[line:50] INFO Open url: https://www.nhtest.com/en/customer/account/login
+2021-07-07 14:37:47,547 logger.py[line:50] INFO Maximize the current window.
+2021-07-07 14:37:47,910 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-07 14:37:47,911 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-07 14:37:51,036 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-07 14:37:51,049 logger.py[line:50] INFO Had find the element //*[@id="details-button"] successful 
+2021-07-07 14:37:51,077 logger.py[line:50] INFO The element xpath=>//*[@id="details-button"] was clicked.
+2021-07-07 14:37:54,200 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-07 14:37:54,208 logger.py[line:50] INFO Had find the element //*[@id="proceed-link"] successful 
+2021-07-07 14:37:54,451 logger.py[line:50] INFO The element xpath=>//*[@id="proceed-link"] was clicked.
+2021-07-07 14:38:00,149 logger.py[line:50] INFO Open url: https://www.nhjewelry.com/13/other-marketing/mall/orderSettlementInfo
+2021-07-07 14:38:00,269 logger.py[line:50] INFO Maximize the current window.
+2021-07-07 14:38:00,627 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-07 14:38:00,628 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-07 14:38:03,752 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-07 14:38:03,778 logger.py[line:50] INFO Had find the element //*[@id="details-button"] successful 
+2021-07-07 14:38:03,805 logger.py[line:50] INFO The element xpath=>//*[@id="details-button"] was clicked.
+2021-07-07 14:38:06,917 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-07 14:38:06,926 logger.py[line:50] INFO Had find the element //*[@id="proceed-link"] successful 
+2021-07-07 14:38:07,185 logger.py[line:50] INFO The element xpath=>//*[@id="proceed-link"] was clicked.
+2021-07-07 14:38:10,234 logger.py[line:50] INFO Closing and quit the browser.
+2021-07-07 14:38:10,237 logger.py[line:50] INFO Now, Close and quit the browser.

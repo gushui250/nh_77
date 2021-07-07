@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "AttributeError: 'BasePage' object has no attribute 'driver'",
+      "children" : [ {
+        "name" : "test01[后台设置\n]",
+        "uid" : "5f8fb59525f78ff6",
+        "parentUid" : "67423fbb5d21dd810d983ce26fcd77de",
+        "status" : "broken",
+        "time" : {
+          "start" : 1625639781304,
+          "stop" : 1625639781305,
+          "duration" : 1
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "[{'story': [['后台设置\\n']], 'tital': [['高级设置', 'click', 'xpath=>//*[@id=\"details-button\"]'], ['继续', 'click', 'xpath=>//*[@id=\"proceed-link\"]'], ['打开网页', 'open_browser', 'https://www.nhjewelry.com/13/other-marketing/mall/orderSettlementInfo'], ['高级设置', 'click', 'xpath=>//*[@id=\"details-button\"]'], ['继续', 'click', 'xpath=>//*[@id=\"proceed-link\"]']]}]" ]
+      } ],
+      "uid" : "67423fbb5d21dd810d983ce26fcd77de"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

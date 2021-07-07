@@ -1,0 +1,11 @@
+[ {
+  "uid" : "5f8fb59525f78ff6",
+  "name" : "test01[后台设置\n]",
+  "time" : {
+    "start" : 1625639781304,
+    "stop" : 1625639781305,
+    "duration" : 1
+  },
+  "status" : "broken",
+  "severity" : "normal"
+} ]

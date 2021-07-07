@@ -1,0 +1,11 @@
+2021-07-07 15:48:29,464 logger.py[line:50] INFO Open url: https://www.baidu.com
+2021-07-07 15:48:29,698 logger.py[line:50] INFO Maximize the current window.
+2021-07-07 15:48:30,015 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-07 15:48:30,016 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-07 15:48:30,018 logger.py[line:50] INFO Current page title is 百度一下，你就知道.
+2021-07-07 15:49:12,126 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/div/a[1] successful 
+2021-07-07 15:49:13,767 logger.py[line:50] INFO The element xpath=>/html/body/div[1]/div/div/a[1] was clicked.
+2021-07-07 15:49:23,792 logger.py[line:53] ERROR NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div/a[1]"}
+  (Session info: chrome=90.0.4430.212)
+
+2021-07-07 15:49:23,976 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots

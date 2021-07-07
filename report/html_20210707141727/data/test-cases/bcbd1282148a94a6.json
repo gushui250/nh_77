@@ -1,0 +1,442 @@
+{
+  "uid" : "bcbd1282148a94a6",
+  "name" : "test01[无安全登录操作-生成订单\n]",
+  "fullName" : "testcase.test_case01.Test_BaiduSearch#test01",
+  "historyId" : "a1cfa1a48bf63906d646572bd3f963db",
+  "time" : {
+    "start" : 1625638556379,
+    "stop" : 1625638640759,
+    "duration" : 84380
+  },
+  "description" : "\n        登录case用例\n        :param params:\n        :return:\n        ",
+  "descriptionHtml" : "<pre><code>    登录case用例\n    :param params:\n    :return:\n</code></pre>\n",
+  "status" : "broken",
+  "statusMessage" : "AttributeError: 'str' object has no attribute 'click'",
+  "statusTrace" : "self = <testcase.test_case01.Test_BaiduSearch object at 0x000001FC962BD860>\nparams = [['打开网页', 'open_browser', 'https://www.nhtest.com/en/customer/account/login'], ['高级设置', 'click', 'xpath=>//*[@id=\"deta... ['输入密码', 'send_keys', 'xpath=>//*[@id=\"password\"]', '123456'], ['点击登录', 'click', 'xpath=>//*[@id=\"saveButton\"]'], ...]\n\n    @pytest.mark.parametrize('params', list(Data_().data03(4)),ids=Data_().story(4))\n    def test01(self, params):\n        '''\n        登录case用例\n        :param params:\n        :return:\n        '''\n        params = params[0]['tital']\n        print(params)\n        for i in params:\n            if i != None:\n                with allure.step(i[0]):\n                    func = getattr(self.driver, i[1])\n                    cases = [i for i in list(i[2:]) if i != '' and i != '\\n']\n                    print(cases)\n>                   func(*cases)\n\ntest_case01.py:200: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <framework.base_page.BasePage object at 0x000001FC962DF2B0>\nselector = 'xpath=>//*[@id=\"orderForm\"]/div/div[3]/div[2]/div[15]/button'\n\n    def click(self, selector):\n    \n        self.get_windows_img('截图')\n        try:\n            el = self.find_element(selector)\n>           el.click()\nE           AttributeError: 'str' object has no attribute 'click'\n\n..\\framework\\base_page.py:268: AttributeError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_BaiduSearch",
+    "time" : {
+      "start" : 1625638556374,
+      "stop" : 1625638556378,
+      "duration" : 4
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "\n        登录case用例\n        :param params:\n        :return:\n        ",
+    "status" : "broken",
+    "statusMessage" : "AttributeError: 'str' object has no attribute 'click'",
+    "statusTrace" : "self = <testcase.test_case01.Test_BaiduSearch object at 0x000001FC962BD860>\nparams = [['打开网页', 'open_browser', 'https://www.nhtest.com/en/customer/account/login'], ['高级设置', 'click', 'xpath=>//*[@id=\"deta... ['输入密码', 'send_keys', 'xpath=>//*[@id=\"password\"]', '123456'], ['点击登录', 'click', 'xpath=>//*[@id=\"saveButton\"]'], ...]\n\n    @pytest.mark.parametrize('params', list(Data_().data03(4)),ids=Data_().story(4))\n    def test01(self, params):\n        '''\n        登录case用例\n        :param params:\n        :return:\n        '''\n        params = params[0]['tital']\n        print(params)\n        for i in params:\n            if i != None:\n                with allure.step(i[0]):\n                    func = getattr(self.driver, i[1])\n                    cases = [i for i in list(i[2:]) if i != '' and i != '\\n']\n                    print(cases)\n>                   func(*cases)\n\ntest_case01.py:200: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _\n\nself = <framework.base_page.BasePage object at 0x000001FC962DF2B0>\nselector = 'xpath=>//*[@id=\"orderForm\"]/div/div[3]/div[2]/div[15]/button'\n\n    def click(self, selector):\n    \n        self.get_windows_img('截图')\n        try:\n            el = self.find_element(selector)\n>           el.click()\nE           AttributeError: 'str' object has no attribute 'click'\n\n..\\framework\\base_page.py:268: AttributeError",
+    "steps" : [ {
+      "name" : "打开网页",
+      "time" : {
+        "start" : 1625638556379,
+        "stop" : 1625638561756,
+        "duration" : 5377
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2508498bcea6d697",
+        "name" : "截图",
+        "source" : "2508498bcea6d697.png",
+        "type" : "image/png",
+        "size" : 36725
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "高级设置",
+      "time" : {
+        "start" : 1625638561756,
+        "stop" : 1625638564898,
+        "duration" : 3142
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "227dd5e23f90cce7",
+        "name" : "截图",
+        "source" : "227dd5e23f90cce7.png",
+        "type" : "image/png",
+        "size" : 36725
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "继续",
+      "time" : {
+        "start" : 1625638564898,
+        "stop" : 1625638572849,
+        "duration" : 7951
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "a938f6ecf54fa419",
+        "name" : "截图",
+        "source" : "a938f6ecf54fa419.png",
+        "type" : "image/png",
+        "size" : 49222
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "输入账号",
+      "time" : {
+        "start" : 1625638572849,
+        "stop" : 1625638576117,
+        "duration" : 3268
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "7deda7943b473740",
+        "name" : "截图",
+        "source" : "7deda7943b473740.png",
+        "type" : "image/png",
+        "size" : 234655
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "输入密码",
+      "time" : {
+        "start" : 1625638576117,
+        "stop" : 1625638579334,
+        "duration" : 3217
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "ca05cd365aac953",
+        "name" : "截图",
+        "source" : "ca05cd365aac953.png",
+        "type" : "image/png",
+        "size" : 233585
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击登录",
+      "time" : {
+        "start" : 1625638579334,
+        "stop" : 1625638587290,
+        "duration" : 7956
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "f75a5ead04792809",
+        "name" : "截图",
+        "source" : "f75a5ead04792809.png",
+        "type" : "image/png",
+        "size" : 233585
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "跳到首页",
+      "time" : {
+        "start" : 1625638587290,
+        "stop" : 1625638602718,
+        "duration" : 15428
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "6cd5fc7ec62aaa60",
+        "name" : "截图",
+        "source" : "6cd5fc7ec62aaa60.png",
+        "type" : "image/png",
+        "size" : 204790
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "跳到我的页面",
+      "time" : {
+        "start" : 1625638602718,
+        "stop" : 1625638607592,
+        "duration" : 4874
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "3dba3c4ac133d981",
+        "name" : "截图",
+        "source" : "3dba3c4ac133d981.png",
+        "type" : "image/png",
+        "size" : 1649704
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "跳到my order页面",
+      "time" : {
+        "start" : 1625638607592,
+        "stop" : 1625638611896,
+        "duration" : 4304
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "d585992708519b60",
+        "name" : "截图",
+        "source" : "d585992708519b60.png",
+        "type" : "image/png",
+        "size" : 216079
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击我的第一个订单",
+      "time" : {
+        "start" : 1625638611896,
+        "stop" : 1625638616211,
+        "duration" : 4315
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c9c0105c433e6f73",
+        "name" : "截图",
+        "source" : "c9c0105c433e6f73.png",
+        "type" : "image/png",
+        "size" : 215960
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "勾选全部按钮",
+      "time" : {
+        "start" : 1625638616211,
+        "stop" : 1625638619401,
+        "duration" : 3190
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "74d4ad388076a39",
+        "name" : "截图",
+        "source" : "74d4ad388076a39.png",
+        "type" : "image/png",
+        "size" : 217423
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击加入购物车",
+      "time" : {
+        "start" : 1625638619401,
+        "stop" : 1625638622576,
+        "duration" : 3175
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c6e5f903037c9c7f",
+        "name" : "截图",
+        "source" : "c6e5f903037c9c7f.png",
+        "type" : "image/png",
+        "size" : 217680
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击购物车图标",
+      "time" : {
+        "start" : 1625638622576,
+        "stop" : 1625638626893,
+        "duration" : 4317
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "c64f01b72763d94d",
+        "name" : "截图",
+        "source" : "c64f01b72763d94d.png",
+        "type" : "image/png",
+        "size" : 235204
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击checkout now",
+      "time" : {
+        "start" : 1625638626893,
+        "stop" : 1625638630325,
+        "duration" : 3432
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "2b9715e469579815",
+        "name" : "截图",
+        "source" : "2b9715e469579815.png",
+        "type" : "image/png",
+        "size" : 489512
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 1,
+      "shouldDisplayMessage" : false
+    }, {
+      "name" : "点击pay now",
+      "time" : {
+        "start" : 1625638630325,
+        "stop" : 1625638640759,
+        "duration" : 10434
+      },
+      "status" : "broken",
+      "statusMessage" : "AttributeError: 'str' object has no attribute 'click'\n",
+      "statusTrace" : "  File \"E:\\nh修正版\\nh\\testcase\\test_case01.py\", line 200, in test01\n    func(*cases)\n  File \"E:\\nh修正版\\nh\\framework\\base_page.py\", line 268, in click\n    el.click()\n",
+      "steps" : [ ],
+      "attachments" : [ {
+        "uid" : "47deef32d9a26331",
+        "name" : "截图",
+        "source" : "47deef32d9a26331.png",
+        "type" : "image/png",
+        "size" : 489512
+      }, {
+        "uid" : "9940c52380410fc5",
+        "name" : "错误截图",
+        "source" : "9940c52380410fc5.png",
+        "type" : "image/png",
+        "size" : 520706
+      } ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : true,
+      "attachmentsCount" : 2,
+      "shouldDisplayMessage" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "838421146fd08262",
+      "name" : "log",
+      "source" : "838421146fd08262.txt",
+      "type" : "text/plain",
+      "size" : 4205
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 15,
+    "hasContent" : true,
+    "attachmentsCount" : 17,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ {
+    "name" : "xunit_setup_class_fixture_Test_BaiduSearch::0",
+    "time" : {
+      "start" : 1625638644882,
+      "stop" : 1625638647015,
+      "duration" : 2133
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "epic",
+    "value" : "项目名称: 旎浩"
+  }, {
+    "name" : "parentSuite",
+    "value" : "testcase"
+  }, {
+    "name" : "suite",
+    "value" : "test_case01"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_BaiduSearch"
+  }, {
+    "name" : "host",
+    "value" : "DESKTOP-T311BD1"
+  }, {
+    "name" : "thread",
+    "value" : "48040-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "testcase.test_case01"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "params",
+    "value" : "[{'story': [['无安全登录操作-生成订单\\n']], 'tital': [['打开网页', 'open_browser', 'https://www.nhtest.com/en/customer/account/login'], ['高级设置', 'click', 'xpath=>//*[@id=\"details-button\"]'], ['继续', 'click', 'xpath=>//*[@id=\"proceed-link\"]'], ['输入账号', 'send_keys', 'xpath=>//*[@id=\"email\"]', '2770488802@qq.com'], ['输入密码', 'send_keys', 'xpath=>//*[@id=\"password\"]', '123456'], ['点击登录', 'click', 'xpath=>//*[@id=\"saveButton\"]'], ['跳到首页', 'click', 'xpath=>//*[@id=\"g-head\"]/div/p/a'], ['跳到我的页面', 'click', 'xpath=>/html/body/div[1]/div/div/a[1]'], ['跳到my order页面', 'click', 'xpath=>/html/body/div[6]/div[1]/div/ul/li[3]/a'], ['点击我的第一个订单', 'click', 'xpath=>/html/body/div[6]/div[2]/div/div[2]/table/tbody/tr[1]/td[1]'], ['勾选全部按钮', 'click', 'xpath=>//*[@id=\"selectAllCheckbox\"]'], ['点击加入购物车', 'click', 'xpath=>/html/body/div[6]/div/div/div[2]/div[1]/div[1]/div/button'], ['点击购物车图标', 'click', 'xpath=>//*[@id=\"J_HeadCart\"]/div/a'], ['点击checkout now', 'click', 'xpath=>//*[@id=\"J_Total_Cart\"]/div[2]/div[2]/a'], ['点击pay now', 'click', 'xpath=>//*[@id=\"orderForm\"]/div/div[3]/div[2]/div[15]/button'], ['选择西联支付', 'click', 'xpath=>/html/body/div[4]/div[1]/div[1]/div[9]/div[1]/i'], ['点击pay now', 'click', 'xpath=>//*[@id=\"payJump\"]'], ['点击确定', 'click', 'xpath=>//*[@id=\"J_Card_Modal\"]/div/span[1]']]}]"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "bcbd1282148a94a6.json",
+  "parameterValues" : [ "[{'story': [['无安全登录操作-生成订单\\n']], 'tital': [['打开网页', 'open_browser', 'https://www.nhtest.com/en/customer/account/login'], ['高级设置', 'click', 'xpath=>//*[@id=\"details-button\"]'], ['继续', 'click', 'xpath=>//*[@id=\"proceed-link\"]'], ['输入账号', 'send_keys', 'xpath=>//*[@id=\"email\"]', '2770488802@qq.com'], ['输入密码', 'send_keys', 'xpath=>//*[@id=\"password\"]', '123456'], ['点击登录', 'click', 'xpath=>//*[@id=\"saveButton\"]'], ['跳到首页', 'click', 'xpath=>//*[@id=\"g-head\"]/div/p/a'], ['跳到我的页面', 'click', 'xpath=>/html/body/div[1]/div/div/a[1]'], ['跳到my order页面', 'click', 'xpath=>/html/body/div[6]/div[1]/div/ul/li[3]/a'], ['点击我的第一个订单', 'click', 'xpath=>/html/body/div[6]/div[2]/div/div[2]/table/tbody/tr[1]/td[1]'], ['勾选全部按钮', 'click', 'xpath=>//*[@id=\"selectAllCheckbox\"]'], ['点击加入购物车', 'click', 'xpath=>/html/body/div[6]/div/div/div[2]/div[1]/div[1]/div/button'], ['点击购物车图标', 'click', 'xpath=>//*[@id=\"J_HeadCart\"]/div/a'], ['点击checkout now', 'click', 'xpath=>//*[@id=\"J_Total_Cart\"]/div[2]/div[2]/a'], ['点击pay now', 'click', 'xpath=>//*[@id=\"orderForm\"]/div/div[3]/div[2]/div[15]/button'], ['选择西联支付', 'click', 'xpath=>/html/body/div[4]/div[1]/div[1]/div[9]/div[1]/i'], ['点击pay now', 'click', 'xpath=>//*[@id=\"payJump\"]'], ['点击确定', 'click', 'xpath=>//*[@id=\"J_Card_Modal\"]/div/span[1]']]}]" ]
+}
