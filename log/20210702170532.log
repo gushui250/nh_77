@@ -1,0 +1,62 @@
+2021-07-02 17:05:38,449 logger.py[line:50] INFO Open url: https://www.nhtest.com/en/customer/account/login
+2021-07-02 17:05:38,452 logger.py[line:50] INFO Maximize the current window.
+2021-07-02 17:05:38,630 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 17:05:38,631 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-02 17:05:51,684 logger.py[line:53] ERROR NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="email"]"}
+  (Session info: chrome=90.0.4430.212)
+
+2021-07-02 17:05:51,815 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 17:05:52,098 logger.py[line:50] INFO Closing and quit the browser.
+2021-07-02 17:05:56,947 logger.py[line:50] INFO Open url: https://www.nhtest.com/en/customer
+2021-07-02 17:05:56,950 logger.py[line:50] INFO Maximize the current window.
+2021-07-02 17:05:57,172 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 17:05:57,173 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-02 17:06:00,386 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 17:06:00,396 logger.py[line:50] INFO Had find the element //*[@id="g-head"]/div/p/a successful 
+2021-07-02 17:06:02,948 logger.py[line:50] INFO The element xpath=>//*[@id="g-head"]/div/p/a was clicked.
+2021-07-02 17:06:06,203 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 17:06:06,212 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/div/a[1] successful 
+2021-07-02 17:06:08,849 logger.py[line:50] INFO The element xpath=>/html/body/div[1]/div/div/a[1] was clicked.
+2021-07-02 17:06:11,986 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 17:06:11,995 logger.py[line:50] INFO Had find the element /html/body/div[6]/div[1]/div/ul/li[3]/a successful 
+2021-07-02 17:06:14,410 logger.py[line:50] INFO The element xpath=>/html/body/div[6]/div[1]/div/ul/li[3]/a was clicked.
+2021-07-02 17:06:17,551 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 17:06:17,560 logger.py[line:50] INFO Had find the element /html/body/div[6]/div[2]/div/div[2]/table/tbody/tr[1]/td[1] successful 
+2021-07-02 17:06:20,424 logger.py[line:50] INFO The element xpath=>/html/body/div[6]/div[2]/div/div[2]/table/tbody/tr[1]/td[1] was clicked.
+2021-07-02 17:06:23,566 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 17:06:23,577 logger.py[line:50] INFO Had find the element //*[@id="selectAllCheckbox"] successful 
+2021-07-02 17:06:23,606 logger.py[line:50] INFO The element xpath=>//*[@id="selectAllCheckbox"] was clicked.
+2021-07-02 17:06:26,749 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 17:06:26,757 logger.py[line:50] INFO Had find the element /html/body/div[6]/div/div/div[2]/div[1]/div[1]/div/button successful 
+2021-07-02 17:06:26,788 logger.py[line:50] INFO The element xpath=>/html/body/div[6]/div/div/div[2]/div[1]/div[1]/div/button was clicked.
+2021-07-02 17:06:29,941 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 17:06:29,951 logger.py[line:50] INFO Had find the element //*[@id="J_HeadCart"]/div/a successful 
+2021-07-02 17:07:41,317 logger.py[line:50] INFO The element xpath=>//*[@id="J_HeadCart"]/div/a was clicked.
+2021-07-02 17:08:04,391 logger.py[line:50] INFO Closing and quit the browser.
+2021-07-02 17:08:09,501 logger.py[line:50] INFO Open url: https://www.nhtest.com/en/customer
+2021-07-02 17:08:09,504 logger.py[line:50] INFO Maximize the current window.
+2021-07-02 17:08:09,732 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 17:08:09,735 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-02 17:08:12,937 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 17:08:13,023 logger.py[line:50] INFO Had find the element //*[@id="g-head"]/div/p/a successful 
+2021-07-02 17:08:15,686 logger.py[line:50] INFO The element xpath=>//*[@id="g-head"]/div/p/a was clicked.
+2021-07-02 17:08:18,950 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 17:08:18,961 logger.py[line:50] INFO Had find the element //*[@id="J_HeadCart"]/div/a successful 
+2021-07-02 17:08:21,628 logger.py[line:50] INFO The element xpath=>//*[@id="J_HeadCart"]/div/a was clicked.
+2021-07-02 17:08:24,819 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 17:08:24,831 logger.py[line:50] INFO Had find the element //*[@id="J_Total_Cart"]/div[2]/div[2]/a successful 
+2021-07-02 17:08:27,630 logger.py[line:50] INFO The element xpath=>//*[@id="J_Total_Cart"]/div[2]/div[2]/a was clicked.
+2021-07-02 17:08:30,846 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 17:08:30,862 logger.py[line:50] INFO Had find the element //*[@id="orderForm"]/div/div[3]/div[2]/div[15]/button successful 
+2021-07-02 17:08:41,021 logger.py[line:50] INFO The element xpath=>//*[@id="orderForm"]/div/div[3]/div[2]/div[15]/button was clicked.
+2021-07-02 17:08:44,214 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 17:08:44,222 logger.py[line:50] INFO Had find the element /html/body/div[4]/div[1]/div[1]/div[9]/div[1]/i successful 
+2021-07-02 17:08:44,259 logger.py[line:50] INFO The element xpath=>/html/body/div[4]/div[1]/div[1]/div[9]/div[1]/i was clicked.
+2021-07-02 17:08:47,406 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 17:08:47,417 logger.py[line:50] INFO Had find the element //*[@id="payJump"] successful 
+2021-07-02 17:08:49,581 logger.py[line:50] INFO The element xpath=>//*[@id="payJump"] was clicked.
+2021-07-02 17:08:52,759 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 17:08:52,768 logger.py[line:50] INFO Had find the element //*[@id="J_Card_Modal"]/div/span[1] successful 
+2021-07-02 17:08:52,797 logger.py[line:50] INFO The element xpath=>//*[@id="J_Card_Modal"]/div/span[1] was clicked.
+2021-07-02 17:08:56,056 logger.py[line:50] INFO Closing and quit the browser.
+2021-07-02 17:08:56,058 logger.py[line:50] INFO Now, Close and quit the browser.

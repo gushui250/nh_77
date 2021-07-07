@@ -1,0 +1,4 @@
+2021-07-01 14:35:14,000 logger.py[line:50] INFO Open url: https://www.nhtest.com
+2021-07-01 14:35:14,003 logger.py[line:50] INFO Maximize the current window.
+2021-07-01 14:35:14,004 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-01 14:35:17,005 logger.py[line:50] INFO Now, Close and quit the browser.

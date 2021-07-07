@@ -1,0 +1,6 @@
+2021-02-01 15:16:17,846 logger.py[line:50] INFO You had select Chrome browser.
+2021-02-01 15:16:17,846 logger.py[line:50] INFO The test server url is: https://www.nhtest.com/
+2021-02-01 15:16:18,397 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:51974/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-02-01 15:16:18,398 connectionpool.py[line:231] DEBUG Starting new HTTP connection (1): 127.0.0.1:51974
+2021-02-01 15:16:31,700 connectionpool.py[line:461] DEBUG http://127.0.0.1:51974 "POST /session HTTP/1.1" 500 1095
+2021-02-01 15:16:31,729 remote_connection.py[line:440] DEBUG Finished Request

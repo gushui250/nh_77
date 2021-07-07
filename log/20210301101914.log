@@ -1,0 +1,6 @@
+2021-03-01 10:19:17,783 logger.py[line:50] INFO Open url: https://www.nhtest.com/
+2021-03-01 10:19:19,895 logger.py[line:50] INFO Maximize the current window.
+2021-03-01 10:19:19,896 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-03-01 10:19:20,067 logger.py[line:50] INFO Open url: https://www.nhtest.com/
+2021-03-01 10:19:20,069 logger.py[line:50] INFO Maximize the current window.
+2021-03-01 10:19:20,070 logger.py[line:50] INFO Set implicitly wait 10 seconds.

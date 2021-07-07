@@ -1,0 +1,19 @@
+2021-02-01 14:43:29,452 logger.py[line:50] INFO You had select Chrome browser.
+2021-02-01 14:43:29,453 logger.py[line:50] INFO The test server url is: https://www.nhtest.com/
+2021-02-01 14:43:29,985 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:56486/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-02-01 14:43:29,986 connectionpool.py[line:231] DEBUG Starting new HTTP connection (1): 127.0.0.1:56486
+2021-02-01 14:43:32,629 connectionpool.py[line:461] DEBUG http://127.0.0.1:56486 "POST /session HTTP/1.1" 200 717
+2021-02-01 14:43:32,630 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 14:43:32,631 logger.py[line:50] INFO Starting Chrome browser.
+2021-02-01 14:43:32,631 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:56486/session/8c8d826d7146a1395a003193c7b3d619/url {"url": "https://www.nhtest.com/"}
+2021-02-01 14:43:32,987 connectionpool.py[line:461] DEBUG http://127.0.0.1:56486 "POST /session/8c8d826d7146a1395a003193c7b3d619/url HTTP/1.1" 200 14
+2021-02-01 14:43:32,988 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 14:43:32,988 logger.py[line:50] INFO Open url: https://www.nhtest.com/
+2021-02-01 14:43:32,988 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:56486/session/8c8d826d7146a1395a003193c7b3d619/window/maximize {}
+2021-02-01 14:43:35,496 connectionpool.py[line:461] DEBUG http://127.0.0.1:56486 "POST /session/8c8d826d7146a1395a003193c7b3d619/window/maximize HTTP/1.1" 200 52
+2021-02-01 14:43:35,497 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 14:43:35,497 logger.py[line:50] INFO Maximize the current window.
+2021-02-01 14:43:35,498 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:56486/session/8c8d826d7146a1395a003193c7b3d619/timeouts {"implicit": 10000}
+2021-02-01 14:43:35,501 connectionpool.py[line:461] DEBUG http://127.0.0.1:56486 "POST /session/8c8d826d7146a1395a003193c7b3d619/timeouts HTTP/1.1" 200 14
+2021-02-01 14:43:35,502 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 14:43:35,502 logger.py[line:50] INFO Set implicitly wait 10 seconds.

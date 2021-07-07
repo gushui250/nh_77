@@ -1,0 +1,14 @@
+2021-02-01 15:50:51,497 logger.py[line:50] INFO You had select Chrome browser.
+2021-02-01 15:50:51,498 logger.py[line:50] INFO The test server url is: https://www.nhtest.com/
+2021-02-01 15:50:54,721 logger.py[line:50] INFO Starting Chrome browser.
+2021-02-01 15:50:55,029 logger.py[line:50] INFO Open url: https://www.nhtest.com/
+2021-02-01 15:50:57,386 logger.py[line:50] INFO Maximize the current window.
+2021-02-01 15:50:57,388 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-02-01 15:50:57,427 logger.py[line:50] INFO Had find the element //*[@id="details-button"] successful 
+2021-02-01 15:50:57,477 logger.py[line:50] INFO The element xpath=>//*[@id="details-button"] was clicked.
+2021-02-01 15:51:00,495 logger.py[line:50] INFO Had find the element //*[@id="proceed-link"] successful 
+2021-02-01 15:51:46,949 logger.py[line:50] INFO The element xpath=>//*[@id="proceed-link"] was clicked.
+2021-02-01 15:51:49,973 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/span successful 
+2021-02-01 15:51:53,265 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/span successful 
+2021-02-01 15:51:57,674 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/div/a[3] successful 
+2021-02-01 15:51:58,016 logger.py[line:50] INFO The element xpath=>/html/body/div[1]/div/ul/li[3]/div/div/a[3] was clicked.

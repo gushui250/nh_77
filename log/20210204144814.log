@@ -1,0 +1,123 @@
+2021-02-04 14:48:15,224 logger.py[line:50] INFO You had select Chrome browser.
+2021-02-04 14:48:15,224 logger.py[line:50] INFO The test server url is: https://www.nhtest.com/
+2021-02-04 14:48:18,446 logger.py[line:50] INFO Starting Chrome browser.
+2021-02-04 14:48:18,688 logger.py[line:50] INFO Open url: https://www.nhtest.com/
+2021-02-04 14:48:20,811 logger.py[line:50] INFO Maximize the current window.
+2021-02-04 14:48:20,812 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-02-04 14:48:21,098 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:48:21,107 logger.py[line:50] INFO Had find the element //*[@id="details-button"] successful 
+2021-02-04 14:48:21,133 logger.py[line:50] INFO The element xpath=>//*[@id="details-button"] was clicked.
+2021-02-04 14:48:24,413 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:48:24,421 logger.py[line:50] INFO Had find the element //*[@id="proceed-link"] successful 
+2021-02-04 14:48:32,288 logger.py[line:50] INFO The element xpath=>//*[@id="proceed-link"] was clicked.
+2021-02-04 14:48:35,819 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:48:35,829 logger.py[line:50] INFO Had find the element //*[@id="modal-toRegister"]/div[2]/div[1] successful 
+2021-02-04 14:48:35,856 logger.py[line:50] INFO The element xpath=>//*[@id="modal-toRegister"]/div[2]/div[1] was clicked.
+2021-02-04 14:48:39,373 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:48:39,382 logger.py[line:50] INFO Had find the element //*[@id="g-head"]/div/p/a
+ successful 
+2021-02-04 14:48:43,965 logger.py[line:50] INFO The element xpath=>//*[@id="g-head"]/div/p/a
+ was clicked.
+2021-02-04 14:48:47,758 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:48:50,471 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:48:53,226 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:48:55,942 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:48:58,672 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:01,425 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:04,122 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:06,875 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:09,592 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:12,307 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:15,059 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:17,770 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:20,523 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:23,243 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:25,956 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:28,708 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:31,423 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:34,173 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:36,908 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:39,606 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:42,341 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:45,057 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:47,790 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:50,525 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:53,221 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:55,974 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:49:58,672 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:01,407 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:04,143 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:06,856 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:09,613 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:12,332 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:15,067 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:17,809 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:20,524 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:23,276 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:25,991 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:28,705 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:31,458 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:34,177 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:36,931 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:39,642 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:42,357 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:45,115 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:47,820 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:50,512 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:53,142 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:55,778 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:50:58,448 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:01,095 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:03,765 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:06,411 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:09,062 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:11,712 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:14,344 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:17,014 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:19,645 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:22,312 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:24,963 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:27,595 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:30,263 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:32,894 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:35,563 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:38,197 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:40,842 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:43,512 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:46,145 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:48,812 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:51,445 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:54,094 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:56,747 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:51:59,376 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:02,029 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:04,660 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:07,311 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:09,949 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:12,577 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:15,247 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:17,876 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:20,546 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:23,178 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:25,958 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:28,773 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:31,518 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:34,238 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:36,920 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:39,603 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:42,338 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:45,020 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:47,756 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:50,458 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:53,135 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:55,855 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:52:58,533 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:53:01,257 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:53:04,004 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:53:06,728 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:53:09,534 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:53:12,261 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:53:15,010 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:53:17,769 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:53:20,517 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-04 14:53:23,313 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots

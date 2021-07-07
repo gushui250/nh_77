@@ -1,0 +1,2 @@
+ERROR    root:logger.py:53 NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="email"]"}
+  (Session info: chrome=90.0.4430.212)

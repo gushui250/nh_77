@@ -1,0 +1,6 @@
+2021-02-02 14:05:31,244 logger.py[line:50] INFO You had select Chrome browser.
+2021-02-02 14:05:31,244 logger.py[line:50] INFO The test server url is: https://www.nhtest.com/
+2021-02-02 14:05:34,440 logger.py[line:50] INFO Starting Chrome browser.
+2021-02-02 14:05:34,998 logger.py[line:50] INFO Open url: https://www.nhtest.com/
+2021-02-02 14:05:37,113 logger.py[line:50] INFO Maximize the current window.
+2021-02-02 14:05:37,113 logger.py[line:50] INFO Set implicitly wait 10 seconds.

@@ -1,0 +1,11 @@
+2021-07-02 16:24:15,396 logger.py[line:50] INFO Open url: https://www.baidu.com
+2021-07-02 16:24:15,513 logger.py[line:50] INFO Maximize the current window.
+2021-07-02 16:24:15,900 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 16:24:15,901 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-02 16:24:17,901 logger.py[line:50] INFO Sleep for 2 seconds
+2021-07-02 16:24:17,941 logger.py[line:50] INFO Closing and quit the browser.
+2021-07-02 16:24:22,941 logger.py[line:50] INFO Sleep for 5 seconds
+2021-07-02 16:24:45,882 logger.py[line:50] INFO Open url: https://www.nihaojewelry.com
+2021-07-02 16:24:46,007 logger.py[line:50] INFO Maximize the current window.
+2021-07-02 16:24:46,659 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 16:24:46,660 logger.py[line:50] INFO Set implicitly wait 10 seconds.

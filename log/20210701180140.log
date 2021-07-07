@@ -1,0 +1,10 @@
+2021-07-01 18:01:42,957 logger.py[line:50] INFO Open url: https://www.nhtest.com/en/customer/account/login
+2021-07-01 18:01:43,076 logger.py[line:50] INFO Maximize the current window.
+2021-07-01 18:01:43,277 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 18:01:43,278 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-01 18:01:46,433 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 18:01:56,457 logger.py[line:53] ERROR NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/div/a[1]"}
+  (Session info: chrome=90.0.4430.212)
+
+2021-07-01 18:01:56,596 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 18:01:56,671 logger.py[line:50] INFO Now, Close and quit the browser.

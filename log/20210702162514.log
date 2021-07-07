@@ -1,0 +1,21 @@
+2021-07-02 16:25:16,624 logger.py[line:50] INFO Open url: https://www.nhtest.com/en/customer
+2021-07-02 16:25:16,740 logger.py[line:50] INFO Maximize the current window.
+2021-07-02 16:25:17,237 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 16:25:17,238 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-02 16:25:20,397 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 16:25:30,435 logger.py[line:53] ERROR NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="g-head"]/div/p/a"}
+  (Session info: chrome=90.0.4430.212)
+
+2021-07-02 16:25:30,581 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 16:25:30,708 logger.py[line:50] INFO Closing and quit the browser.
+2021-07-02 16:25:32,477 logger.py[line:50] INFO Open url: https://www.nhtest.com/en/customer
+2021-07-02 16:25:32,593 logger.py[line:50] INFO Maximize the current window.
+2021-07-02 16:25:32,867 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 16:25:32,868 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-02 16:25:36,027 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 16:25:46,064 logger.py[line:53] ERROR NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="g-head"]/div/p/a"}
+  (Session info: chrome=90.0.4430.212)
+
+2021-07-02 16:25:46,210 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 16:25:46,288 logger.py[line:50] INFO Closing and quit the browser.
+2021-07-02 16:25:46,289 logger.py[line:50] INFO Now, Close and quit the browser.

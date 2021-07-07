@@ -1,0 +1,102 @@
+2021-02-01 14:59:29,465 logger.py[line:50] INFO You had select Chrome browser.
+2021-02-01 14:59:29,465 logger.py[line:50] INFO The test server url is: https://www.nhtest.com/
+2021-02-01 14:59:29,989 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:60566/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-02-01 14:59:29,990 connectionpool.py[line:231] DEBUG Starting new HTTP connection (1): 127.0.0.1:60566
+2021-02-01 14:59:32,803 connectionpool.py[line:461] DEBUG http://127.0.0.1:60566 "POST /session HTTP/1.1" 200 716
+2021-02-01 14:59:32,817 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 14:59:32,817 logger.py[line:50] INFO Starting Chrome browser.
+2021-02-01 14:59:32,818 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:60566/session/9c44936bf307e85f3206593fdc79c59f/url {"url": "https://www.nhtest.com/"}
+2021-02-01 14:59:33,281 connectionpool.py[line:461] DEBUG http://127.0.0.1:60566 "POST /session/9c44936bf307e85f3206593fdc79c59f/url HTTP/1.1" 200 14
+2021-02-01 14:59:33,282 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 14:59:33,282 logger.py[line:50] INFO Open url: https://www.nhtest.com/
+2021-02-01 14:59:33,283 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:60566/session/9c44936bf307e85f3206593fdc79c59f/window/maximize {}
+2021-02-01 14:59:35,404 connectionpool.py[line:461] DEBUG http://127.0.0.1:60566 "POST /session/9c44936bf307e85f3206593fdc79c59f/window/maximize HTTP/1.1" 200 52
+2021-02-01 14:59:35,405 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 14:59:35,405 logger.py[line:50] INFO Maximize the current window.
+2021-02-01 14:59:35,406 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:60566/session/9c44936bf307e85f3206593fdc79c59f/timeouts {"implicit": 10000}
+2021-02-01 14:59:35,407 connectionpool.py[line:461] DEBUG http://127.0.0.1:60566 "POST /session/9c44936bf307e85f3206593fdc79c59f/timeouts HTTP/1.1" 200 14
+2021-02-01 14:59:35,407 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 14:59:35,408 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-02-01 14:59:35,414 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:60566/session/9c44936bf307e85f3206593fdc79c59f/element {"using": "xpath", "value": "//*[@id=\"proceed-link"}
+2021-02-01 14:59:35,443 connectionpool.py[line:461] DEBUG http://127.0.0.1:60566 "POST /session/9c44936bf307e85f3206593fdc79c59f/element HTTP/1.1" 400 1299
+2021-02-01 14:59:35,445 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 14:59:35,445 logger.py[line:53] ERROR NoSuchElementException: Message: invalid selector: Unable to locate an element with the xpath expression //*[@id="proceed-link because of the following error:
+SyntaxError: Failed to execute 'evaluate' on 'Document': The string '//*[@id="proceed-link' is not a valid XPath expression.
+  (Session info: chrome=88.0.4324.104)
+
+2021-02-01 14:59:35,446 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:60566/session/9c44936bf307e85f3206593fdc79c59f/screenshot {}
+2021-02-01 14:59:35,902 connectionpool.py[line:461] DEBUG http://127.0.0.1:60566 "GET /session/9c44936bf307e85f3206593fdc79c59f/screenshot HTTP/1.1" 200 40712
+2021-02-01 14:59:35,903 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 14:59:35,904 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-01 14:59:35,919 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:60566/session/9c44936bf307e85f3206593fdc79c59f/execute/sync {"script": "arguments[0].scrollIntoView();", "args": [""]}
+2021-02-01 14:59:35,927 connectionpool.py[line:461] DEBUG http://127.0.0.1:60566 "POST /session/9c44936bf307e85f3206593fdc79c59f/execute/sync HTTP/1.1" 500 1077
+2021-02-01 14:59:35,927 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 14:59:36,041 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:60566/session/9c44936bf307e85f3206593fdc79c59f {}
+2021-02-01 14:59:36,109 connectionpool.py[line:461] DEBUG http://127.0.0.1:60566 "DELETE /session/9c44936bf307e85f3206593fdc79c59f HTTP/1.1" 200 14
+2021-02-01 14:59:36,110 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 14:59:38,490 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:60566/session/9c44936bf307e85f3206593fdc79c59f/element {"using": "xpath", "value": "/html/body/div[1]/div/ul/li[3]/div/span"}
+2021-02-01 14:59:38,491 connectionpool.py[line:272] DEBUG Resetting dropped connection: 127.0.0.1
+2021-02-01 14:59:40,779 retry.py[line:575] DEBUG Incremented Retry for (url='/session/9c44936bf307e85f3206593fdc79c59f/element'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2021-02-01 14:59:40,779 connectionpool.py[line:781] WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000166473996A0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/9c44936bf307e85f3206593fdc79c59f/element
+2021-02-01 14:59:40,780 connectionpool.py[line:231] DEBUG Starting new HTTP connection (2): 127.0.0.1:60566
+2021-02-01 14:59:43,041 retry.py[line:575] DEBUG Incremented Retry for (url='/session/9c44936bf307e85f3206593fdc79c59f/element'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2021-02-01 14:59:43,041 connectionpool.py[line:781] WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001664738B4E0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/9c44936bf307e85f3206593fdc79c59f/element
+2021-02-01 14:59:43,042 connectionpool.py[line:231] DEBUG Starting new HTTP connection (3): 127.0.0.1:60566
+2021-02-01 14:59:45,196 retry.py[line:575] DEBUG Incremented Retry for (url='/session/9c44936bf307e85f3206593fdc79c59f/element'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2021-02-01 14:59:45,196 connectionpool.py[line:781] WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000016647399A90>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/9c44936bf307e85f3206593fdc79c59f/element
+2021-02-01 14:59:45,197 connectionpool.py[line:231] DEBUG Starting new HTTP connection (4): 127.0.0.1:60566
+2021-02-01 14:59:47,572 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:60566/session/9c44936bf307e85f3206593fdc79c59f {}
+2021-02-01 14:59:47,573 connectionpool.py[line:231] DEBUG Starting new HTTP connection (5): 127.0.0.1:60566
+2021-02-01 14:59:49,576 retry.py[line:575] DEBUG Incremented Retry for (url='/session/9c44936bf307e85f3206593fdc79c59f'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2021-02-01 14:59:49,577 connectionpool.py[line:781] WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000016647761320>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/9c44936bf307e85f3206593fdc79c59f
+2021-02-01 14:59:49,577 connectionpool.py[line:231] DEBUG Starting new HTTP connection (6): 127.0.0.1:60566
+2021-02-01 14:59:51,786 retry.py[line:575] DEBUG Incremented Retry for (url='/session/9c44936bf307e85f3206593fdc79c59f'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2021-02-01 14:59:51,786 connectionpool.py[line:781] WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000016647761748>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/9c44936bf307e85f3206593fdc79c59f
+2021-02-01 14:59:51,787 connectionpool.py[line:231] DEBUG Starting new HTTP connection (7): 127.0.0.1:60566
+2021-02-01 14:59:54,135 retry.py[line:575] DEBUG Incremented Retry for (url='/session/9c44936bf307e85f3206593fdc79c59f'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2021-02-01 14:59:54,135 connectionpool.py[line:781] WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000016647761550>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/9c44936bf307e85f3206593fdc79c59f
+2021-02-01 14:59:54,136 connectionpool.py[line:231] DEBUG Starting new HTTP connection (8): 127.0.0.1:60566
+2021-02-01 14:59:56,439 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:60566/session/9c44936bf307e85f3206593fdc79c59f/element {"using": "xpath", "value": "/html/body/div[1]/div/ul/li[3]/div/span"}
+2021-02-01 14:59:56,439 connectionpool.py[line:231] DEBUG Starting new HTTP connection (9): 127.0.0.1:60566
+2021-02-01 14:59:58,444 retry.py[line:575] DEBUG Incremented Retry for (url='/session/9c44936bf307e85f3206593fdc79c59f/element'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2021-02-01 14:59:58,444 connectionpool.py[line:781] WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000016647761160>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/9c44936bf307e85f3206593fdc79c59f/element
+2021-02-01 14:59:58,445 connectionpool.py[line:231] DEBUG Starting new HTTP connection (10): 127.0.0.1:60566
+2021-02-01 15:00:00,947 retry.py[line:575] DEBUG Incremented Retry for (url='/session/9c44936bf307e85f3206593fdc79c59f/element'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2021-02-01 15:00:00,947 connectionpool.py[line:781] WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000166476E7470>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/9c44936bf307e85f3206593fdc79c59f/element
+2021-02-01 15:00:00,948 connectionpool.py[line:231] DEBUG Starting new HTTP connection (11): 127.0.0.1:60566
+2021-02-01 15:00:02,953 retry.py[line:575] DEBUG Incremented Retry for (url='/session/9c44936bf307e85f3206593fdc79c59f/element'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2021-02-01 15:00:02,953 connectionpool.py[line:781] WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000166476E7F98>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/9c44936bf307e85f3206593fdc79c59f/element
+2021-02-01 15:00:02,954 connectionpool.py[line:231] DEBUG Starting new HTTP connection (12): 127.0.0.1:60566
+2021-02-01 15:00:05,662 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:60566/session/9c44936bf307e85f3206593fdc79c59f {}
+2021-02-01 15:00:05,663 connectionpool.py[line:231] DEBUG Starting new HTTP connection (13): 127.0.0.1:60566
+2021-02-01 15:00:07,666 retry.py[line:575] DEBUG Incremented Retry for (url='/session/9c44936bf307e85f3206593fdc79c59f'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2021-02-01 15:00:07,666 connectionpool.py[line:781] WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000166477CC2E8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/9c44936bf307e85f3206593fdc79c59f
+2021-02-01 15:00:07,667 connectionpool.py[line:231] DEBUG Starting new HTTP connection (14): 127.0.0.1:60566
+2021-02-01 15:00:09,779 retry.py[line:575] DEBUG Incremented Retry for (url='/session/9c44936bf307e85f3206593fdc79c59f'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2021-02-01 15:00:09,779 connectionpool.py[line:781] WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000166477CC710>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/9c44936bf307e85f3206593fdc79c59f
+2021-02-01 15:00:09,780 connectionpool.py[line:231] DEBUG Starting new HTTP connection (15): 127.0.0.1:60566
+2021-02-01 15:00:12,131 retry.py[line:575] DEBUG Incremented Retry for (url='/session/9c44936bf307e85f3206593fdc79c59f'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2021-02-01 15:00:12,131 connectionpool.py[line:781] WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000166477CC518>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/9c44936bf307e85f3206593fdc79c59f
+2021-02-01 15:00:12,132 connectionpool.py[line:231] DEBUG Starting new HTTP connection (16): 127.0.0.1:60566
+2021-02-01 15:00:14,142 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:60566/session/9c44936bf307e85f3206593fdc79c59f/element {"using": "xpath", "value": "/html/body/div[1]/div/ul/li[3]/div/div/a[3]"}
+2021-02-01 15:00:14,143 connectionpool.py[line:231] DEBUG Starting new HTTP connection (17): 127.0.0.1:60566
+2021-02-01 15:00:16,286 retry.py[line:575] DEBUG Incremented Retry for (url='/session/9c44936bf307e85f3206593fdc79c59f/element'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2021-02-01 15:00:16,286 connectionpool.py[line:781] WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000166477CCA20>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/9c44936bf307e85f3206593fdc79c59f/element
+2021-02-01 15:00:16,287 connectionpool.py[line:231] DEBUG Starting new HTTP connection (18): 127.0.0.1:60566
+2021-02-01 15:00:18,290 retry.py[line:575] DEBUG Incremented Retry for (url='/session/9c44936bf307e85f3206593fdc79c59f/element'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2021-02-01 15:00:18,290 connectionpool.py[line:781] WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000166477CC358>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/9c44936bf307e85f3206593fdc79c59f/element
+2021-02-01 15:00:18,291 connectionpool.py[line:231] DEBUG Starting new HTTP connection (19): 127.0.0.1:60566
+2021-02-01 15:00:20,295 retry.py[line:575] DEBUG Incremented Retry for (url='/session/9c44936bf307e85f3206593fdc79c59f/element'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2021-02-01 15:00:20,295 connectionpool.py[line:781] WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000166475DA860>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/9c44936bf307e85f3206593fdc79c59f/element
+2021-02-01 15:00:20,296 connectionpool.py[line:231] DEBUG Starting new HTTP connection (20): 127.0.0.1:60566
+2021-02-01 15:00:22,679 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:60566/session/9c44936bf307e85f3206593fdc79c59f {}
+2021-02-01 15:00:22,679 connectionpool.py[line:231] DEBUG Starting new HTTP connection (21): 127.0.0.1:60566
+2021-02-01 15:00:24,979 retry.py[line:575] DEBUG Incremented Retry for (url='/session/9c44936bf307e85f3206593fdc79c59f'): Retry(total=2, connect=None, read=None, redirect=None, status=None)
+2021-02-01 15:00:24,979 connectionpool.py[line:781] WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000166477130B8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/9c44936bf307e85f3206593fdc79c59f
+2021-02-01 15:00:24,980 connectionpool.py[line:231] DEBUG Starting new HTTP connection (22): 127.0.0.1:60566
+2021-02-01 15:00:27,130 retry.py[line:575] DEBUG Incremented Retry for (url='/session/9c44936bf307e85f3206593fdc79c59f'): Retry(total=1, connect=None, read=None, redirect=None, status=None)
+2021-02-01 15:00:27,130 connectionpool.py[line:781] WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000166477134E0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/9c44936bf307e85f3206593fdc79c59f
+2021-02-01 15:00:27,131 connectionpool.py[line:231] DEBUG Starting new HTTP connection (23): 127.0.0.1:60566
+2021-02-01 15:00:29,279 retry.py[line:575] DEBUG Incremented Retry for (url='/session/9c44936bf307e85f3206593fdc79c59f'): Retry(total=0, connect=None, read=None, redirect=None, status=None)
+2021-02-01 15:00:29,279 connectionpool.py[line:781] WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000166477138D0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/9c44936bf307e85f3206593fdc79c59f
+2021-02-01 15:00:29,280 connectionpool.py[line:231] DEBUG Starting new HTTP connection (24): 127.0.0.1:60566

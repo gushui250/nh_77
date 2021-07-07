@@ -1,0 +1,72 @@
+2021-02-03 11:28:58,338 logger.py[line:50] INFO You had select Chrome browser.
+2021-02-03 11:28:58,338 logger.py[line:50] INFO The test server url is: https://www.nhtest.com/
+2021-02-03 11:29:01,499 logger.py[line:50] INFO Starting Chrome browser.
+2021-02-03 11:29:01,872 logger.py[line:50] INFO Open url: https://www.nhtest.com/
+2021-02-03 11:29:03,986 logger.py[line:50] INFO Maximize the current window.
+2021-02-03 11:29:03,987 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-02-03 11:29:04,275 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:29:04,285 logger.py[line:50] INFO Had find the element //*[@id="details-button"] successful 
+2021-02-03 11:29:04,312 logger.py[line:50] INFO The element xpath=>//*[@id="details-button"] was clicked.
+2021-02-03 11:29:07,608 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:29:07,616 logger.py[line:50] INFO Had find the element //*[@id="proceed-link"] successful 
+2021-02-03 11:29:14,567 logger.py[line:50] INFO The element xpath=>//*[@id="proceed-link"] was clicked.
+2021-02-03 11:29:17,581 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/span successful 
+2021-02-03 11:29:21,395 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:29:21,402 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/span successful 
+2021-02-03 11:29:26,340 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:29:26,350 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/div/a[3] successful 
+2021-02-03 11:29:26,562 logger.py[line:50] INFO The element xpath=>/html/body/div[1]/div/ul/li[3]/div/div/a[3] was clicked.
+2021-02-03 11:29:29,571 logger.py[line:50] INFO Had find the element //*[@id="email"] successful 
+2021-02-03 11:29:29,961 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:29:29,962 logger.py[line:50] INFO Had type ' 2770488802@qq.com ' in inputBox
+2021-02-03 11:29:32,973 logger.py[line:50] INFO Had find the element //*[@id="password"] successful 
+2021-02-03 11:29:33,376 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:29:33,377 logger.py[line:50] INFO Had type ' 123456 ' in inputBox
+2021-02-03 11:29:36,697 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:29:36,714 logger.py[line:50] INFO Had find the element ' Login ' successful by id via value: saveButton 
+2021-02-03 11:29:38,782 logger.py[line:50] INFO The element id=>saveButton was clicked.
+2021-02-03 11:29:42,096 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:29:42,105 logger.py[line:50] INFO Had find the element //*[@id="g-head"]/div/p/a
+ successful 
+2021-02-03 11:29:43,817 logger.py[line:50] INFO The element xpath=>//*[@id="g-head"]/div/p/a
+ was clicked.
+2021-02-03 11:29:47,430 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:29:47,441 logger.py[line:50] INFO Had find the element /html/body/div[5]/div[1]/div/ul/li[1]/a/span/img successful 
+2021-02-03 11:29:56,014 logger.py[line:50] INFO The element xpath=>/html/body/div[5]/div[1]/div/ul/li[1]/a/span/img was clicked.
+2021-02-03 11:29:59,024 logger.py[line:50] INFO Had find the element //*[@id="J_Goods_List"]/div[2]/div[1]/a/img successful 
+2021-02-03 11:30:02,788 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:30:02,798 logger.py[line:50] INFO Had find the element //*[@id="J_Goods_List"]/div[2]/div[3]/span successful 
+2021-02-03 11:30:02,829 logger.py[line:50] INFO The element xpath=>//*[@id="J_Goods_List"]/div[2]/div[3]/span was clicked.
+2021-02-03 11:30:05,840 logger.py[line:50] INFO Had find the element //*[@id="J_Card_Modal"]/div[1]/div[2]/div[3]/div/div/table/tbody/tr[1]/td[4]/div/input[2] successful 
+2021-02-03 11:30:06,319 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:30:06,320 logger.py[line:50] INFO Had type ' 3445 ' in inputBox
+2021-02-03 11:30:09,736 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:30:09,747 logger.py[line:50] INFO Had find the element //*[@id="AddToCart"] successful 
+2021-02-03 11:30:09,777 logger.py[line:50] INFO The element xpath=>//*[@id="AddToCart"] was clicked.
+2021-02-03 11:30:13,241 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:30:15,100 logger.py[line:50] INFO The element class_name=>cart was clicked.
+2021-02-03 11:30:18,495 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:30:19,801 logger.py[line:50] INFO The element class_name=>checkout-btn was clicked.
+2021-02-03 11:30:23,183 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:30:26,041 logger.py[line:50] INFO The element class_name=>now-btn was clicked.
+2021-02-03 11:30:29,452 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:30:29,461 logger.py[line:50] INFO Had find the element //*[@id="payJump"] successful 
+2021-02-03 11:30:43,427 logger.py[line:50] INFO The element xpath=>//*[@id="payJump"] was clicked.
+2021-02-03 11:30:46,449 logger.py[line:50] INFO Had find the element //*[@id="injectedUnifiedLogin"]/iframe successful 
+2021-02-03 11:30:49,482 logger.py[line:50] INFO Had find the element //*[@id="email"] successful 
+2021-02-03 11:30:49,879 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:30:49,880 logger.py[line:50] INFO Had type ' sb-k423u3452180@business.example.com ' in inputBox
+2021-02-03 11:30:52,896 logger.py[line:50] INFO Had find the element //*[@id="password"] successful 
+2021-02-03 11:30:53,264 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:30:53,264 logger.py[line:50] INFO Had type ' T>MnLvZ6 ' in inputBox
+2021-02-03 11:30:56,564 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:30:56,573 logger.py[line:50] INFO Had find the element //*[@id="btnLogin"] successful 
+2021-02-03 11:30:56,631 logger.py[line:50] INFO The element xpath=>//*[@id="btnLogin"] was clicked.
+2021-02-03 11:31:02,932 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:31:02,940 logger.py[line:50] INFO Had find the element //*[@id="confirmButtonTop"] successful 
+2021-02-03 11:31:02,979 logger.py[line:50] INFO The element xpath=>//*[@id="confirmButtonTop"] was clicked.
+2021-02-03 11:31:10,579 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 11:31:10,588 logger.py[line:50] INFO Had find the element //*[@id="J_Card_Modal"]/div/span[1]
+ successful 
+2021-02-03 11:31:10,615 logger.py[line:50] INFO The element xpath=>//*[@id="J_Card_Modal"]/div/span[1]
+ was clicked.

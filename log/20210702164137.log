@@ -1,0 +1,15 @@
+2021-07-02 16:41:42,632 logger.py[line:50] INFO Open url: https://www.nhtest.com/en/customer/account/login
+2021-07-02 16:41:42,635 logger.py[line:50] INFO Maximize the current window.
+2021-07-02 16:41:42,790 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 16:41:42,791 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-02 16:41:55,806 logger.py[line:53] ERROR NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="email"]"}
+  (Session info: chrome=90.0.4430.212)
+
+2021-07-02 16:41:56,002 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 16:42:16,123 logger.py[line:50] INFO Closing and quit the browser.
+2021-07-02 16:42:20,940 logger.py[line:50] INFO Open url: https://www.nhtest.com/en/customer
+2021-07-02 16:42:20,943 logger.py[line:50] INFO Maximize the current window.
+2021-07-02 16:42:21,160 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 16:42:21,161 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-02 16:42:24,365 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 16:42:24,376 logger.py[line:50] INFO Had find the element //*[@id="g-head"]/div/p/a successful 

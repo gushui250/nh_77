@@ -1,0 +1,5 @@
+2021-07-01 18:31:23,892 logger.py[line:50] INFO Open url: https://www.nhtest.com/en/customer
+2021-07-01 18:31:24,009 logger.py[line:50] INFO Maximize the current window.
+2021-07-01 18:31:24,409 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 18:31:24,410 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-01 18:31:27,584 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots

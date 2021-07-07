@@ -1,0 +1,25 @@
+2021-01-30 16:06:49,880 logger.py[line:50] INFO You had select Chrome browser.
+2021-01-30 16:06:49,881 logger.py[line:50] INFO The test server url is: http://baidu.com
+2021-01-30 16:06:50,493 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:61981/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-30 16:06:50,494 connectionpool.py[line:231] DEBUG Starting new HTTP connection (1): 127.0.0.1:61981
+2021-01-30 16:06:53,328 connectionpool.py[line:461] DEBUG http://127.0.0.1:61981 "POST /session HTTP/1.1" 200 717
+2021-01-30 16:06:53,329 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-30 16:06:53,329 logger.py[line:50] INFO Starting Chrome browser.
+2021-01-30 16:06:53,329 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:61981/session/8359198f43464eb16a6a90c5ba25d352/url {"url": "http://baidu.com"}
+2021-01-30 16:06:53,571 connectionpool.py[line:461] DEBUG http://127.0.0.1:61981 "POST /session/8359198f43464eb16a6a90c5ba25d352/url HTTP/1.1" 200 14
+2021-01-30 16:06:53,572 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-30 16:06:53,572 logger.py[line:50] INFO Open url: http://baidu.com
+2021-01-30 16:06:53,573 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:61981/session/8359198f43464eb16a6a90c5ba25d352/window/maximize {}
+2021-01-30 16:06:55,691 connectionpool.py[line:461] DEBUG http://127.0.0.1:61981 "POST /session/8359198f43464eb16a6a90c5ba25d352/window/maximize HTTP/1.1" 200 52
+2021-01-30 16:06:55,691 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-30 16:06:55,691 logger.py[line:50] INFO Maximize the current window.
+2021-01-30 16:06:55,692 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:61981/session/8359198f43464eb16a6a90c5ba25d352/timeouts {"implicit": 10000}
+2021-01-30 16:06:55,693 connectionpool.py[line:461] DEBUG http://127.0.0.1:61981 "POST /session/8359198f43464eb16a6a90c5ba25d352/timeouts HTTP/1.1" 200 14
+2021-01-30 16:06:55,693 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-30 16:06:55,694 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-01-30 16:06:55,696 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:61981/session/8359198f43464eb16a6a90c5ba25d352/element {"using": "css selector", "value": "[id=\"kw\"]"}
+2021-01-30 16:07:00,987 connectionpool.py[line:461] DEBUG http://127.0.0.1:61981 "POST /session/8359198f43464eb16a6a90c5ba25d352/element HTTP/1.1" 200 14
+2021-01-30 16:07:00,987 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-30 16:07:01,063 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:61981/session/8359198f43464eb16a6a90c5ba25d352 {}
+2021-01-30 16:07:01,110 connectionpool.py[line:461] DEBUG http://127.0.0.1:61981 "DELETE /session/8359198f43464eb16a6a90c5ba25d352 HTTP/1.1" 200 14
+2021-01-30 16:07:01,112 remote_connection.py[line:440] DEBUG Finished Request

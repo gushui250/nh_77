@@ -1,0 +1,3 @@
+2021-02-02 13:51:02,587 logger.py[line:50] INFO You had select Chrome browser.
+2021-02-02 13:51:02,587 logger.py[line:50] INFO The test server url is: https://www.nhtest.com/
+2021-02-02 13:51:05,901 logger.py[line:50] INFO Starting Chrome browser.

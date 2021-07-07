@@ -1,0 +1,8 @@
+2021-07-01 18:10:30,147 logger.py[line:50] INFO Open url: https://www.nhtest.com/en/customer/account/login
+2021-07-01 18:10:30,261 logger.py[line:50] INFO Maximize the current window.
+2021-07-01 18:10:30,649 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 18:10:30,650 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-01 18:10:33,659 logger.py[line:50] INFO Had find the element //*[@id="email"] successful 
+2021-07-01 18:10:33,900 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 18:10:33,901 logger.py[line:50] INFO Had type ' 2770488802@qq.com ' in inputBox
+2021-07-01 18:11:13,135 logger.py[line:50] INFO Now, Close and quit the browser.

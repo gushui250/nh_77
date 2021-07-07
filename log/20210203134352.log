@@ -1,0 +1,9 @@
+2021-02-03 13:43:53,101 logger.py[line:50] INFO You had select Chrome browser.
+2021-02-03 13:43:53,101 logger.py[line:50] INFO The test server url is: https://www.nhtest.com/
+2021-02-03 13:43:56,318 logger.py[line:50] INFO Starting Chrome browser.
+2021-02-03 13:43:56,567 logger.py[line:50] INFO Open url: https://www.nhtest.com/
+2021-02-03 13:43:58,691 logger.py[line:50] INFO Maximize the current window.
+2021-02-03 13:43:58,692 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-02-03 13:43:58,971 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 13:43:58,980 logger.py[line:50] INFO Had find the element //*[@id="details-button"] successful 
+2021-02-03 13:43:59,008 logger.py[line:50] INFO The element xpath=>//*[@id="details-button"] was clicked.

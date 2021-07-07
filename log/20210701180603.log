@@ -1,0 +1,13 @@
+2021-07-01 18:06:05,436 logger.py[line:50] INFO Open url: https://www.nhtest.com/en/customer/account/login
+2021-07-01 18:06:05,552 logger.py[line:50] INFO Maximize the current window.
+2021-07-01 18:06:05,961 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 18:06:05,962 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-01 18:06:08,970 logger.py[line:50] INFO Had find the element //*[@id="email"] successful 
+2021-07-01 18:06:09,188 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 18:06:09,189 logger.py[line:50] INFO Had type ' 2770488802@qq.com ' in inputBox
+2021-07-01 18:06:12,195 logger.py[line:50] INFO Had find the element //*[@id="password"] successful 
+2021-07-01 18:06:12,415 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 18:06:12,416 logger.py[line:50] INFO Had type ' 123456 ' in inputBox
+2021-07-01 18:06:15,563 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 18:06:15,571 logger.py[line:50] INFO Had find the element //*[@id="saveButton"] successful 
+2021-07-01 18:06:16,653 logger.py[line:50] INFO The element xpath=>//*[@id="saveButton"] was clicked.

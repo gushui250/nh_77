@@ -1,0 +1,7 @@
+2021-07-02 16:21:45,776 logger.py[line:50] INFO Open url: https://www.baidu.com
+2021-07-02 16:21:45,895 logger.py[line:50] INFO Maximize the current window.
+2021-07-02 16:21:46,201 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-02 16:21:46,202 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-02 16:21:48,203 logger.py[line:50] INFO Sleep for 2 seconds
+2021-07-02 16:21:52,260 logger.py[line:50] INFO Closing and quit the browser.
+2021-07-02 16:21:57,261 logger.py[line:50] INFO Sleep for 5 seconds

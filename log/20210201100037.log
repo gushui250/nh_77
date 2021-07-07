@@ -1,0 +1,52 @@
+2021-02-01 10:00:37,822 logger.py[line:50] INFO You had select Chrome browser.
+2021-02-01 10:00:37,823 logger.py[line:50] INFO The test server url is: https://www.nhtest.com/
+2021-02-01 10:00:38,399 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:62167/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-02-01 10:00:38,400 connectionpool.py[line:231] DEBUG Starting new HTTP connection (1): 127.0.0.1:62167
+2021-02-01 10:00:41,082 connectionpool.py[line:461] DEBUG http://127.0.0.1:62167 "POST /session HTTP/1.1" 200 717
+2021-02-01 10:00:41,083 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 10:00:41,084 logger.py[line:50] INFO Starting Chrome browser.
+2021-02-01 10:00:41,084 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:62167/session/46568307f17a8e26b75c1e5d9cb474dc/url {"url": "https://www.nhtest.com/"}
+2021-02-01 10:00:41,427 connectionpool.py[line:461] DEBUG http://127.0.0.1:62167 "POST /session/46568307f17a8e26b75c1e5d9cb474dc/url HTTP/1.1" 200 14
+2021-02-01 10:00:41,428 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 10:00:41,428 logger.py[line:50] INFO Open url: https://www.nhtest.com/
+2021-02-01 10:00:41,429 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:62167/session/46568307f17a8e26b75c1e5d9cb474dc/window/maximize {}
+2021-02-01 10:00:43,552 connectionpool.py[line:461] DEBUG http://127.0.0.1:62167 "POST /session/46568307f17a8e26b75c1e5d9cb474dc/window/maximize HTTP/1.1" 200 52
+2021-02-01 10:00:43,552 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 10:00:43,553 logger.py[line:50] INFO Maximize the current window.
+2021-02-01 10:00:43,553 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:62167/session/46568307f17a8e26b75c1e5d9cb474dc/timeouts {"implicit": 10000}
+2021-02-01 10:00:43,555 connectionpool.py[line:461] DEBUG http://127.0.0.1:62167 "POST /session/46568307f17a8e26b75c1e5d9cb474dc/timeouts HTTP/1.1" 200 14
+2021-02-01 10:00:43,555 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 10:00:43,555 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-02-01 10:00:43,559 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:62167/session/46568307f17a8e26b75c1e5d9cb474dc/timeouts {"implicit": 15000}
+2021-02-01 10:00:43,561 connectionpool.py[line:461] DEBUG http://127.0.0.1:62167 "POST /session/46568307f17a8e26b75c1e5d9cb474dc/timeouts HTTP/1.1" 200 14
+2021-02-01 10:00:43,563 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 10:00:43,563 logger.py[line:50] INFO wait for 15 seconds.
+2021-02-01 10:00:43,564 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:62167/session/46568307f17a8e26b75c1e5d9cb474dc/element {"using": "xpath", "value": "//*[@id=\"details-button\"]"}
+2021-02-01 10:00:43,584 connectionpool.py[line:461] DEBUG http://127.0.0.1:62167 "POST /session/46568307f17a8e26b75c1e5d9cb474dc/element HTTP/1.1" 200 88
+2021-02-01 10:00:43,584 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 10:00:43,585 logger.py[line:50] INFO Had find the element //*[@id="details-button"] successful 
+2021-02-01 10:00:43,585 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:62167/session/46568307f17a8e26b75c1e5d9cb474dc/element/a272f954-45c9-47a1-9601-4e1a18259c0e/click {"id": "a272f954-45c9-47a1-9601-4e1a18259c0e"}
+2021-02-01 10:00:43,649 connectionpool.py[line:461] DEBUG http://127.0.0.1:62167 "POST /session/46568307f17a8e26b75c1e5d9cb474dc/element/a272f954-45c9-47a1-9601-4e1a18259c0e/click HTTP/1.1" 200 14
+2021-02-01 10:00:43,650 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 10:00:43,650 logger.py[line:50] INFO The element xpath=>//*[@id="details-button"] was clicked.
+2021-02-01 10:00:43,650 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:62167/session/46568307f17a8e26b75c1e5d9cb474dc/element {"using": "xpath", "value": "//*[@id=\"proceed-link\"]"}
+2021-02-01 10:00:43,667 connectionpool.py[line:461] DEBUG http://127.0.0.1:62167 "POST /session/46568307f17a8e26b75c1e5d9cb474dc/element HTTP/1.1" 200 88
+2021-02-01 10:00:43,668 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 10:00:43,668 logger.py[line:50] INFO Had find the element //*[@id="proceed-link"] successful 
+2021-02-01 10:00:43,668 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:62167/session/46568307f17a8e26b75c1e5d9cb474dc/element/525fbd09-8890-44bb-ae77-00f8943769b9/click {"id": "525fbd09-8890-44bb-ae77-00f8943769b9"}
+2021-02-01 10:00:43,872 connectionpool.py[line:461] DEBUG http://127.0.0.1:62167 "POST /session/46568307f17a8e26b75c1e5d9cb474dc/element/525fbd09-8890-44bb-ae77-00f8943769b9/click HTTP/1.1" 200 14
+2021-02-01 10:00:43,873 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 10:00:43,873 logger.py[line:50] INFO The element xpath=>//*[@id="proceed-link"] was clicked.
+2021-02-01 10:00:43,873 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:62167/session/46568307f17a8e26b75c1e5d9cb474dc/element {"using": "xpath", "value": "/html/body/div[1]/div/ul/li[3]/div/span"}
+2021-02-01 10:00:58,885 connectionpool.py[line:461] DEBUG http://127.0.0.1:62167 "POST /session/46568307f17a8e26b75c1e5d9cb474dc/element HTTP/1.1" 404 1071
+2021-02-01 10:00:58,885 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 10:00:58,886 logger.py[line:53] ERROR NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/div[1]/div/ul/li[3]/div/span"}
+  (Session info: chrome=88.0.4324.104)
+
+2021-02-01 10:00:58,886 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:62167/session/46568307f17a8e26b75c1e5d9cb474dc/screenshot {}
+2021-02-01 10:00:59,262 connectionpool.py[line:461] DEBUG http://127.0.0.1:62167 "GET /session/46568307f17a8e26b75c1e5d9cb474dc/screenshot HTTP/1.1" 200 24044
+2021-02-01 10:00:59,262 remote_connection.py[line:440] DEBUG Finished Request
+2021-02-01 10:00:59,263 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-01 10:00:59,345 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:62167/session/46568307f17a8e26b75c1e5d9cb474dc {}
+2021-02-01 10:00:59,388 connectionpool.py[line:461] DEBUG http://127.0.0.1:62167 "DELETE /session/46568307f17a8e26b75c1e5d9cb474dc HTTP/1.1" 200 14
+2021-02-01 10:00:59,389 remote_connection.py[line:440] DEBUG Finished Request

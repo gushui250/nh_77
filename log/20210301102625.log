@@ -1,0 +1,14 @@
+2021-03-01 10:26:29,479 logger.py[line:50] INFO Open url: https://www.nhtest.com/
+2021-03-01 10:26:31,591 logger.py[line:50] INFO Maximize the current window.
+2021-03-01 10:26:31,592 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-03-01 10:26:31,907 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-03-01 10:26:31,917 logger.py[line:50] INFO Had find the element //*[@id="details-button"] successful 
+2021-03-01 10:26:31,943 logger.py[line:50] INFO The element xpath=>//*[@id="details-button"] was clicked.
+2021-03-01 10:26:35,243 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-03-01 10:26:35,251 logger.py[line:50] INFO Had find the element //*[@id="proceed-link"] successful 
+2021-03-01 10:27:02,513 logger.py[line:50] INFO The element xpath=>//*[@id="proceed-link"] was clicked.
+2021-03-01 10:27:05,521 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/span successful 
+2021-03-01 10:27:09,252 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-03-01 10:27:09,259 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/span successful 
+2021-03-01 10:27:14,043 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-03-01 10:27:14,052 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/div/a[3] successful 

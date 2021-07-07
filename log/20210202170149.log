@@ -1,0 +1,56 @@
+2021-02-02 17:01:50,000 logger.py[line:50] INFO You had select Chrome browser.
+2021-02-02 17:01:50,000 logger.py[line:50] INFO The test server url is: https://www.nhtest.com/
+2021-02-02 17:01:53,208 logger.py[line:50] INFO Starting Chrome browser.
+2021-02-02 17:01:53,511 logger.py[line:50] INFO Open url: https://www.nhtest.com/
+2021-02-02 17:01:55,625 logger.py[line:50] INFO Maximize the current window.
+2021-02-02 17:01:55,626 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-02-02 17:01:55,916 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 17:01:55,925 logger.py[line:50] INFO Had find the element //*[@id="details-button"] successful 
+2021-02-02 17:01:55,953 logger.py[line:50] INFO The element xpath=>//*[@id="details-button"] was clicked.
+2021-02-02 17:01:59,267 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 17:01:59,275 logger.py[line:50] INFO Had find the element //*[@id="proceed-link"] successful 
+2021-02-02 17:02:38,160 logger.py[line:50] INFO The element xpath=>//*[@id="proceed-link"] was clicked.
+2021-02-02 17:02:41,172 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/span successful 
+2021-02-02 17:02:44,994 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 17:02:45,002 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/span successful 
+2021-02-02 17:02:49,829 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 17:02:49,839 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/div/a[3] successful 
+2021-02-02 17:02:49,995 logger.py[line:50] INFO The element xpath=>/html/body/div[1]/div/ul/li[3]/div/div/a[3] was clicked.
+2021-02-02 17:02:53,013 logger.py[line:50] INFO Had find the element //*[@id="email"] successful 
+2021-02-02 17:02:53,422 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 17:02:53,423 logger.py[line:50] INFO Had type ' 2770488802@qq.com ' in inputBox
+2021-02-02 17:02:56,431 logger.py[line:50] INFO Had find the element //*[@id="password"] successful 
+2021-02-02 17:02:56,834 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 17:02:56,835 logger.py[line:50] INFO Had type ' 123456 ' in inputBox
+2021-02-02 17:03:00,152 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 17:03:00,167 logger.py[line:50] INFO Had find the element ' Login ' successful by id via value: saveButton 
+2021-02-02 17:03:03,630 logger.py[line:50] INFO The element id=>saveButton was clicked.
+2021-02-02 17:03:06,639 logger.py[line:50] INFO Had find the element //*[@id="querya"] successful 
+2021-02-02 17:03:07,036 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 17:03:07,036 logger.py[line:50] INFO Had type ' Hair Accessories ' in inputBox
+2021-02-02 17:03:29,069 logger.py[line:53] ERROR NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="J_Goods_List"]/div[1]/a/div[1]/img"}
+  (Session info: chrome=88.0.4324.104)
+
+2021-02-02 17:03:29,482 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 17:03:31,755 logger.py[line:50] INFO You had select Chrome browser.
+2021-02-02 17:03:31,756 logger.py[line:50] INFO The test server url is: https://www.nhtest.com/
+2021-02-02 17:03:34,930 logger.py[line:50] INFO Starting Chrome browser.
+2021-02-02 17:03:35,198 logger.py[line:50] INFO Open url: https://www.nhtest.com/
+2021-02-02 17:03:37,310 logger.py[line:50] INFO Maximize the current window.
+2021-02-02 17:03:37,311 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-02-02 17:03:37,602 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 17:03:47,637 logger.py[line:53] ERROR NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="confirmButtonTop"]"}
+  (Session info: chrome=88.0.4324.104)
+
+2021-02-02 17:03:47,916 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 17:03:50,079 logger.py[line:50] INFO You had select Chrome browser.
+2021-02-02 17:03:50,080 logger.py[line:50] INFO The test server url is: https://www.nhtest.com/
+2021-02-02 17:03:53,295 logger.py[line:50] INFO Starting Chrome browser.
+2021-02-02 17:03:53,556 logger.py[line:50] INFO Open url: https://www.nhtest.com/
+2021-02-02 17:03:55,668 logger.py[line:50] INFO Maximize the current window.
+2021-02-02 17:03:55,669 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-02-02 17:03:55,957 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 17:04:05,972 logger.py[line:53] ERROR NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="confirmButtonTop"]"}
+  (Session info: chrome=88.0.4324.104)
+
+2021-02-02 17:04:06,280 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots

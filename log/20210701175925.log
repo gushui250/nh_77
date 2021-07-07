@@ -1,0 +1,7 @@
+2021-07-01 17:59:28,624 logger.py[line:50] INFO Open url: https://www.nhtest.com/en/customer/account/login
+2021-07-01 17:59:28,791 logger.py[line:50] INFO Maximize the current window.
+2021-07-01 17:59:29,515 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 17:59:29,515 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-01 17:59:32,670 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 17:59:38,382 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/div/a[1] successful 
+2021-07-01 17:59:50,469 logger.py[line:50] INFO Now, Close and quit the browser.

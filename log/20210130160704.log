@@ -1,0 +1,58 @@
+2021-01-30 16:07:04,687 logger.py[line:50] INFO You had select Chrome browser.
+2021-01-30 16:07:04,688 logger.py[line:50] INFO The test server url is: http://baidu.com
+2021-01-30 16:07:05,245 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63787/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+2021-01-30 16:07:05,246 connectionpool.py[line:231] DEBUG Starting new HTTP connection (1): 127.0.0.1:63787
+2021-01-30 16:07:08,079 connectionpool.py[line:461] DEBUG http://127.0.0.1:63787 "POST /session HTTP/1.1" 200 717
+2021-01-30 16:07:08,080 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-30 16:07:08,081 logger.py[line:50] INFO Starting Chrome browser.
+2021-01-30 16:07:08,081 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63787/session/97053ec78c9fb882f8c3c5e5dafd295c/url {"url": "http://baidu.com"}
+2021-01-30 16:07:08,834 connectionpool.py[line:461] DEBUG http://127.0.0.1:63787 "POST /session/97053ec78c9fb882f8c3c5e5dafd295c/url HTTP/1.1" 200 14
+2021-01-30 16:07:08,834 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-30 16:07:08,835 logger.py[line:50] INFO Open url: http://baidu.com
+2021-01-30 16:07:08,835 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63787/session/97053ec78c9fb882f8c3c5e5dafd295c/window/maximize {}
+2021-01-30 16:07:10,988 connectionpool.py[line:461] DEBUG http://127.0.0.1:63787 "POST /session/97053ec78c9fb882f8c3c5e5dafd295c/window/maximize HTTP/1.1" 200 52
+2021-01-30 16:07:10,990 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-30 16:07:10,991 logger.py[line:50] INFO Maximize the current window.
+2021-01-30 16:07:10,991 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63787/session/97053ec78c9fb882f8c3c5e5dafd295c/timeouts {"implicit": 10000}
+2021-01-30 16:07:10,993 connectionpool.py[line:461] DEBUG http://127.0.0.1:63787 "POST /session/97053ec78c9fb882f8c3c5e5dafd295c/timeouts HTTP/1.1" 200 14
+2021-01-30 16:07:10,995 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-30 16:07:10,996 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-01-30 16:07:11,000 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63787/session/97053ec78c9fb882f8c3c5e5dafd295c/element {"using": "css selector", "value": "[id=\"kw\"]"}
+2021-01-30 16:07:11,018 connectionpool.py[line:461] DEBUG http://127.0.0.1:63787 "POST /session/97053ec78c9fb882f8c3c5e5dafd295c/element HTTP/1.1" 200 88
+2021-01-30 16:07:11,019 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-30 16:07:11,019 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:63787/session/97053ec78c9fb882f8c3c5e5dafd295c/element/129e3ea4-2771-486f-bc81-24974f847f0a/text {"id": "129e3ea4-2771-486f-bc81-24974f847f0a"}
+2021-01-30 16:07:11,040 connectionpool.py[line:461] DEBUG http://127.0.0.1:63787 "GET /session/97053ec78c9fb882f8c3c5e5dafd295c/element/129e3ea4-2771-486f-bc81-24974f847f0a/text HTTP/1.1" 200 12
+2021-01-30 16:07:11,040 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-30 16:07:11,040 logger.py[line:50] INFO Had find the element '  ' successful by id via value: kw 
+2021-01-30 16:07:11,041 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63787/session/97053ec78c9fb882f8c3c5e5dafd295c/element/129e3ea4-2771-486f-bc81-24974f847f0a/clear {"id": "129e3ea4-2771-486f-bc81-24974f847f0a"}
+2021-01-30 16:07:11,081 connectionpool.py[line:461] DEBUG http://127.0.0.1:63787 "POST /session/97053ec78c9fb882f8c3c5e5dafd295c/element/129e3ea4-2771-486f-bc81-24974f847f0a/clear HTTP/1.1" 200 14
+2021-01-30 16:07:11,082 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-30 16:07:11,082 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63787/session/97053ec78c9fb882f8c3c5e5dafd295c/element/129e3ea4-2771-486f-bc81-24974f847f0a/value {"text": "selenium", "value": ["s", "e", "l", "e", "n", "i", "u", "m"], "id": "129e3ea4-2771-486f-bc81-24974f847f0a"}
+2021-01-30 16:07:11,227 connectionpool.py[line:461] DEBUG http://127.0.0.1:63787 "POST /session/97053ec78c9fb882f8c3c5e5dafd295c/element/129e3ea4-2771-486f-bc81-24974f847f0a/value HTTP/1.1" 200 14
+2021-01-30 16:07:11,228 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-30 16:07:11,228 logger.py[line:50] INFO Had type ' selenium ' in inputBox
+2021-01-30 16:07:11,228 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63787/session/97053ec78c9fb882f8c3c5e5dafd295c/element {"using": "xpath", "value": "//*[@id='su']"}
+2021-01-30 16:07:11,244 connectionpool.py[line:461] DEBUG http://127.0.0.1:63787 "POST /session/97053ec78c9fb882f8c3c5e5dafd295c/element HTTP/1.1" 200 88
+2021-01-30 16:07:11,245 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-30 16:07:11,245 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:63787/session/97053ec78c9fb882f8c3c5e5dafd295c/element/8f2414b1-e058-4e09-9952-ae4b59b08063/text {"id": "8f2414b1-e058-4e09-9952-ae4b59b08063"}
+2021-01-30 16:07:11,263 connectionpool.py[line:461] DEBUG http://127.0.0.1:63787 "GET /session/97053ec78c9fb882f8c3c5e5dafd295c/element/8f2414b1-e058-4e09-9952-ae4b59b08063/text HTTP/1.1" 200 12
+2021-01-30 16:07:11,264 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-30 16:07:11,264 logger.py[line:50] INFO Had find the element '  ' successful by xpath via value: //*[@id='su'] 
+2021-01-30 16:07:11,265 remote_connection.py[line:388] DEBUG POST http://127.0.0.1:63787/session/97053ec78c9fb882f8c3c5e5dafd295c/element/8f2414b1-e058-4e09-9952-ae4b59b08063/click {"id": "8f2414b1-e058-4e09-9952-ae4b59b08063"}
+2021-01-30 16:07:11,369 connectionpool.py[line:461] DEBUG http://127.0.0.1:63787 "POST /session/97053ec78c9fb882f8c3c5e5dafd295c/element/8f2414b1-e058-4e09-9952-ae4b59b08063/click HTTP/1.1" 200 14
+2021-01-30 16:07:11,370 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-30 16:07:11,371 logger.py[line:50] INFO The element xpath=>//*[@id='su'] was clicked.
+2021-01-30 16:07:13,371 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:63787/session/97053ec78c9fb882f8c3c5e5dafd295c/screenshot {}
+2021-01-30 16:07:13,834 connectionpool.py[line:461] DEBUG http://127.0.0.1:63787 "GET /session/97053ec78c9fb882f8c3c5e5dafd295c/screenshot HTTP/1.1" 200 504196
+2021-01-30 16:07:13,838 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-30 16:07:13,842 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-01-30 16:07:13,842 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:63787/session/97053ec78c9fb882f8c3c5e5dafd295c/title {}
+2021-01-30 16:07:13,848 connectionpool.py[line:461] DEBUG http://127.0.0.1:63787 "GET /session/97053ec78c9fb882f8c3c5e5dafd295c/title HTTP/1.1" 200 33
+2021-01-30 16:07:13,848 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-30 16:07:13,849 logger.py[line:50] INFO Current page title is selenium_°Ù¶ÈËÑË÷.
+2021-01-30 16:07:13,849 remote_connection.py[line:388] DEBUG GET http://127.0.0.1:63787/session/97053ec78c9fb882f8c3c5e5dafd295c/title {}
+2021-01-30 16:07:13,853 connectionpool.py[line:461] DEBUG http://127.0.0.1:63787 "GET /session/97053ec78c9fb882f8c3c5e5dafd295c/title HTTP/1.1" 200 33
+2021-01-30 16:07:13,854 remote_connection.py[line:440] DEBUG Finished Request
+2021-01-30 16:07:13,855 remote_connection.py[line:388] DEBUG DELETE http://127.0.0.1:63787/session/97053ec78c9fb882f8c3c5e5dafd295c {}
+2021-01-30 16:07:13,915 connectionpool.py[line:461] DEBUG http://127.0.0.1:63787 "DELETE /session/97053ec78c9fb882f8c3c5e5dafd295c HTTP/1.1" 200 14
+2021-01-30 16:07:13,916 remote_connection.py[line:440] DEBUG Finished Request

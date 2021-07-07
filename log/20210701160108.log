@@ -1,0 +1,11 @@
+2021-07-01 16:01:12,194 logger.py[line:50] INFO Open url: https://www.nhtest.com
+2021-07-01 16:01:12,197 logger.py[line:50] INFO Maximize the current window.
+2021-07-01 16:01:12,549 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 16:01:12,550 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-01 16:01:15,802 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 16:01:15,812 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/div/a[1] successful 
+2021-07-01 16:01:16,007 logger.py[line:50] INFO The element xpath=>/html/body/div[1]/div/div/a[1] was clicked.
+2021-07-01 16:01:19,015 logger.py[line:50] INFO Had find the element //*[@id="email"] successful 
+2021-07-01 16:01:19,238 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 16:01:19,239 logger.py[line:50] INFO Had type ' 2770488802@qq.com ' in inputBox
+2021-07-01 16:01:22,283 logger.py[line:50] INFO Now, Close and quit the browser.

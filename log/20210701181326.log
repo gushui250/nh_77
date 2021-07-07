@@ -1,0 +1,30 @@
+2021-07-01 18:14:31,179 logger.py[line:50] INFO Open url: https://www.nhtest.com/en/customer/account/login
+2021-07-01 18:14:31,413 logger.py[line:50] INFO Maximize the current window.
+2021-07-01 18:14:31,708 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 18:14:31,709 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-01 18:14:34,719 logger.py[line:50] INFO Had find the element //*[@id="email"] successful 
+2021-07-01 18:14:34,933 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 18:14:34,935 logger.py[line:50] INFO Had type ' 2770488802@qq.com ' in inputBox
+2021-07-01 18:14:37,943 logger.py[line:50] INFO Had find the element //*[@id="password"] successful 
+2021-07-01 18:14:38,167 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 18:14:38,168 logger.py[line:50] INFO Had type ' 123456 ' in inputBox
+2021-07-01 18:14:41,339 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 18:14:41,347 logger.py[line:50] INFO Had find the element //*[@id="saveButton"] successful 
+2021-07-01 18:14:51,039 logger.py[line:50] INFO The element xpath=>//*[@id="saveButton"] was clicked.
+2021-07-01 18:15:03,121 logger.py[line:50] INFO Open url: https://www.nhtest.com/en/customer
+2021-07-01 18:15:04,764 logger.py[line:50] INFO Open url: https://www.nhtest.com/en/customer
+2021-07-01 18:15:04,766 logger.py[line:50] INFO Maximize the current window.
+2021-07-01 18:15:04,984 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 18:15:04,985 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-07-01 18:15:08,118 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 18:15:08,136 logger.py[line:50] INFO Had find the element //*[@id="g-head"]/div/p/a successful 
+2021-07-01 18:15:17,353 logger.py[line:50] INFO The element xpath=>//*[@id="g-head"]/div/p/a was clicked.
+2021-07-01 18:15:20,791 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 18:15:20,803 logger.py[line:50] INFO Had find the element //*[@id="J_HeadCart"]/div/a successful 
+2021-07-01 18:15:23,448 logger.py[line:50] INFO The element xpath=>//*[@id="J_HeadCart"]/div/a was clicked.
+2021-07-01 18:15:26,652 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 18:15:36,679 logger.py[line:53] ERROR NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="J_Total_Cart"]/div[2]/div[2]/a"}
+  (Session info: chrome=90.0.4430.212)
+
+2021-07-01 18:15:36,884 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-07-01 18:15:52,019 logger.py[line:50] INFO Now, Close and quit the browser.

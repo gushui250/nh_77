@@ -1,0 +1,27 @@
+配置表1
+步骤名称,操作,元素,值,
+高级设置,click,xpath=>//*[@id="details-button"],
+继续,click,xpath=>//*[@id="proceed-link"],
+找到订单,move_to_element,xpath=>/html/body/div[1]/div/ul/li[3]/div/span,
+点击订单,click,xpath=>/html/body/div[1]/div/ul/li[3]/div/span,
+点击我的订单,click,xpath=>/html/body/div[1]/div/ul/li[3]/div/div/a[3],
+输入账号,send_keys,xpath=>//*[@id="email"],2770488802@qq.com
+输入密码,send_keys,xpath=>//*[@id="password"],123456
+点击登录,click,id=>saveButton,
+在搜索框内输入关键字,send_keys,xpath=>//*[@id="querya"],flower earrings
+点击搜索,enter,,
+移动到商品上,move_to_element,xpath=>//*[@id="J_Goods_List"]/div[1]/a/div[1]/img,
+点击购物车,click,xpath=>//*[@id="J_Goods_List"]/div[1]/div,
+确定商品数量,click,xpath=>//*[@id="J_Card_Modal"]/div[1]/div[2]/div[3]/div/div/table/tbody/tr[1]/td[4]/div/input[3],
+点击加购,click,xpath=>//*[@id="AddToCart"],
+点击购物车,click,class_name=>cart,
+点击结算,click,class_name=>checkout-btn,
+点击立即支付,click,class_name=>now-btn,
+点击pay,click,xpath=>//*[@id="payJump"],
+进入框架 ,switch_to_frame,xpath=>//*[@id="injectedUnifiedLogin"]/iframe,
+输入支付账号,send_keys,xpath=>//*[@id="email"],sb-k423u3452180@business.example.com
+输入支付密码,send_keys,xpath=>//*[@id="password"],T>MnLvZ6
+点击确定,click,xpath=>//*[@id="btnLogin"],
+退出框架,switch_to_default_content,
+点击继续,click,xpath=>//*[@id="confirmButtonTop"],
+查看订单,click,xpath=>//*[@id="J_Card_Modal"]/div/span[1]

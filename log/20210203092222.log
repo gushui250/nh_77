@@ -1,0 +1,107 @@
+2021-02-03 09:22:22,811 logger.py[line:50] INFO You had select Chrome browser.
+2021-02-03 09:22:22,811 logger.py[line:50] INFO The test server url is: https://www.nhtest.com/
+2021-02-03 09:22:26,151 logger.py[line:50] INFO Starting Chrome browser.
+2021-02-03 09:22:26,926 logger.py[line:50] INFO Open url: https://www.nhtest.com/
+2021-02-03 09:22:29,039 logger.py[line:50] INFO Maximize the current window.
+2021-02-03 09:22:29,040 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-02-03 09:22:29,358 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:22:29,367 logger.py[line:50] INFO Had find the element //*[@id="details-button"] successful 
+2021-02-03 09:22:29,396 logger.py[line:50] INFO The element xpath=>//*[@id="details-button"] was clicked.
+2021-02-03 09:22:32,674 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:22:32,682 logger.py[line:50] INFO Had find the element //*[@id="proceed-link"] successful 
+2021-02-03 09:22:38,474 logger.py[line:50] INFO The element xpath=>//*[@id="proceed-link"] was clicked.
+2021-02-03 09:22:41,484 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/span successful 
+2021-02-03 09:22:45,302 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:22:45,310 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/span successful 
+2021-02-03 09:22:50,274 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:22:50,285 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/div/a[3] successful 
+2021-02-03 09:22:50,496 logger.py[line:50] INFO The element xpath=>/html/body/div[1]/div/ul/li[3]/div/div/a[3] was clicked.
+2021-02-03 09:22:53,509 logger.py[line:50] INFO Had find the element //*[@id="email"] successful 
+2021-02-03 09:22:53,920 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:22:53,920 logger.py[line:50] INFO Had type ' 2770488802@qq.com ' in inputBox
+2021-02-03 09:22:56,936 logger.py[line:50] INFO Had find the element //*[@id="password"] successful 
+2021-02-03 09:22:57,351 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:22:57,351 logger.py[line:50] INFO Had type ' 123456 ' in inputBox
+2021-02-03 09:23:00,683 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:23:00,701 logger.py[line:50] INFO Had find the element ' Login ' successful by id via value: saveButton 
+2021-02-03 09:23:04,387 logger.py[line:50] INFO The element id=>saveButton was clicked.
+2021-02-03 09:23:07,399 logger.py[line:50] INFO Had find the element //*[@id="querya"] successful 
+2021-02-03 09:23:07,790 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:23:07,791 logger.py[line:50] INFO Had type ' flower earrings ' in inputBox
+2021-02-03 09:23:24,938 logger.py[line:53] ERROR NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="J_Goods_List"]/div[1]/a/div[1]/img"}
+  (Session info: chrome=88.0.4324.104)
+
+2021-02-03 09:23:25,362 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:23:27,584 logger.py[line:50] INFO You had select Chrome browser.
+2021-02-03 09:23:27,584 logger.py[line:50] INFO The test server url is: https://www.nhtest.com/
+2021-02-03 09:23:30,748 logger.py[line:50] INFO Starting Chrome browser.
+2021-02-03 09:23:30,974 logger.py[line:50] INFO Open url: https://www.nhtest.com/
+2021-02-03 09:23:33,094 logger.py[line:50] INFO Maximize the current window.
+2021-02-03 09:23:33,098 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-02-03 09:23:33,392 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:23:33,402 logger.py[line:50] INFO Had find the element //*[@id="details-button"] successful 
+2021-02-03 09:23:33,429 logger.py[line:50] INFO The element xpath=>//*[@id="details-button"] was clicked.
+2021-02-03 09:23:36,707 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:23:36,715 logger.py[line:50] INFO Had find the element //*[@id="proceed-link"] successful 
+2021-02-03 09:23:43,490 logger.py[line:50] INFO The element xpath=>//*[@id="proceed-link"] was clicked.
+2021-02-03 09:23:46,508 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/span successful 
+2021-02-03 09:23:50,335 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:23:50,343 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/span successful 
+2021-02-03 09:23:55,329 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:23:55,339 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/div/a[3] successful 
+2021-02-03 09:23:55,546 logger.py[line:50] INFO The element xpath=>/html/body/div[1]/div/ul/li[3]/div/div/a[3] was clicked.
+2021-02-03 09:23:58,562 logger.py[line:50] INFO Had find the element //*[@id="email"] successful 
+2021-02-03 09:23:58,981 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:23:58,982 logger.py[line:50] INFO Had type ' 2770488802@qq.com ' in inputBox
+2021-02-03 09:24:01,991 logger.py[line:50] INFO Had find the element //*[@id="password"] successful 
+2021-02-03 09:24:02,423 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:24:02,424 logger.py[line:50] INFO Had type ' 123456 ' in inputBox
+2021-02-03 09:24:05,752 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:24:05,769 logger.py[line:50] INFO Had find the element ' Login ' successful by id via value: saveButton 
+2021-02-03 09:24:10,193 logger.py[line:50] INFO The element id=>saveButton was clicked.
+2021-02-03 09:24:13,518 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:24:13,526 logger.py[line:50] INFO Had find the element //*[@id="g-head"]/div/p/a
+ successful 
+2021-02-03 09:24:20,128 logger.py[line:50] INFO The element xpath=>//*[@id="g-head"]/div/p/a
+ was clicked.
+2021-02-03 09:24:23,656 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:24:23,666 logger.py[line:50] INFO Had find the element /html/body/div[5]/div[1]/div/ul/li[1]/a/span/img successful 
+2021-02-03 09:24:27,020 logger.py[line:50] INFO The element xpath=>/html/body/div[5]/div[1]/div/ul/li[1]/a/span/img was clicked.
+2021-02-03 09:24:30,036 logger.py[line:50] INFO Had find the element //*[@id="J_Goods_List"]/div[2]/div[1]/a/img successful 
+2021-02-03 09:24:33,812 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:24:33,855 logger.py[line:50] INFO Had find the element //*[@id="J_Goods_List"]/div[2]/div[3]/span successful 
+2021-02-03 09:24:33,884 logger.py[line:50] INFO The element xpath=>//*[@id="J_Goods_List"]/div[2]/div[3]/span was clicked.
+2021-02-03 09:24:39,073 logger.py[line:50] INFO You had select Chrome browser.
+2021-02-03 09:24:39,073 logger.py[line:50] INFO The test server url is: https://www.nhtest.com/
+2021-02-03 09:24:42,237 logger.py[line:50] INFO Starting Chrome browser.
+2021-02-03 09:24:42,459 logger.py[line:50] INFO Open url: https://www.nhtest.com/
+2021-02-03 09:24:44,573 logger.py[line:50] INFO Maximize the current window.
+2021-02-03 09:24:44,575 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-02-03 09:24:44,861 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:24:44,870 logger.py[line:50] INFO Had find the element //*[@id="details-button"] successful 
+2021-02-03 09:24:44,898 logger.py[line:50] INFO The element xpath=>//*[@id="details-button"] was clicked.
+2021-02-03 09:24:48,191 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:24:48,199 logger.py[line:50] INFO Had find the element //*[@id="proceed-link"] successful 
+2021-02-03 09:25:05,597 logger.py[line:50] INFO The element xpath=>//*[@id="proceed-link"] was clicked.
+2021-02-03 09:25:08,614 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/span successful 
+2021-02-03 09:25:12,364 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:25:12,371 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/span successful 
+2021-02-03 09:25:17,247 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:25:17,257 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/div/a[3] successful 
+2021-02-03 09:25:17,442 logger.py[line:50] INFO The element xpath=>/html/body/div[1]/div/ul/li[3]/div/div/a[3] was clicked.
+2021-02-03 09:25:20,460 logger.py[line:50] INFO Had find the element //*[@id="email"] successful 
+2021-02-03 09:25:20,883 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:25:20,883 logger.py[line:50] INFO Had type ' 2770488802@qq.com ' in inputBox
+2021-02-03 09:25:23,892 logger.py[line:50] INFO Had find the element //*[@id="password"] successful 
+2021-02-03 09:25:24,301 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:25:24,302 logger.py[line:50] INFO Had type ' 123456 ' in inputBox
+2021-02-03 09:25:27,635 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:25:27,652 logger.py[line:50] INFO Had find the element ' Login ' successful by id via value: saveButton 
+2021-02-03 09:25:29,887 logger.py[line:50] INFO The element id=>saveButton was clicked.
+2021-02-03 09:25:32,920 logger.py[line:50] INFO Had find the element //*[@id="querya"] successful 
+2021-02-03 09:25:33,340 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-03 09:25:33,341 logger.py[line:50] INFO Had type ' flower earrings ' in inputBox
+2021-02-03 09:25:50,447 logger.py[line:53] ERROR NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="J_Goods_List"]/div[1]/a/div[1]/img"}
+  (Session info: chrome=88.0.4324.104)
+
+2021-02-03 09:25:50,859 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots

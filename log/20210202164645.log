@@ -1,0 +1,46 @@
+2021-02-02 16:46:45,918 logger.py[line:50] INFO You had select Chrome browser.
+2021-02-02 16:46:45,918 logger.py[line:50] INFO The test server url is: https://www.nhtest.com/
+2021-02-02 16:46:49,145 logger.py[line:50] INFO Starting Chrome browser.
+2021-02-02 16:46:49,423 logger.py[line:50] INFO Open url: https://www.nhtest.com/
+2021-02-02 16:46:51,544 logger.py[line:50] INFO Maximize the current window.
+2021-02-02 16:46:51,545 logger.py[line:50] INFO Set implicitly wait 10 seconds.
+2021-02-02 16:46:51,866 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 16:46:51,875 logger.py[line:50] INFO Had find the element //*[@id="details-button"] successful 
+2021-02-02 16:46:51,902 logger.py[line:50] INFO The element xpath=>//*[@id="details-button"] was clicked.
+2021-02-02 16:46:55,184 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 16:46:55,192 logger.py[line:50] INFO Had find the element //*[@id="proceed-link"] successful 
+2021-02-02 16:47:22,667 logger.py[line:50] INFO The element xpath=>//*[@id="proceed-link"] was clicked.
+2021-02-02 16:47:25,678 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/span successful 
+2021-02-02 16:47:29,433 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 16:47:29,439 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/span successful 
+2021-02-02 16:47:34,245 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 16:47:34,255 logger.py[line:50] INFO Had find the element /html/body/div[1]/div/ul/li[3]/div/div/a[3] successful 
+2021-02-02 16:47:34,464 logger.py[line:50] INFO The element xpath=>/html/body/div[1]/div/ul/li[3]/div/div/a[3] was clicked.
+2021-02-02 16:47:37,476 logger.py[line:50] INFO Had find the element //*[@id="email"] successful 
+2021-02-02 16:47:37,870 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 16:47:37,871 logger.py[line:50] INFO Had type ' 2770488802@qq.com ' in inputBox
+2021-02-02 16:47:40,880 logger.py[line:50] INFO Had find the element //*[@id="password"] successful 
+2021-02-02 16:47:41,268 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 16:47:41,269 logger.py[line:50] INFO Had type ' 123456 ' in inputBox
+2021-02-02 16:47:44,586 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 16:47:44,603 logger.py[line:50] INFO Had find the element ' Login ' successful by id via value: saveButton 
+2021-02-02 16:47:49,087 logger.py[line:50] INFO The element id=>saveButton was clicked.
+2021-02-02 16:47:52,097 logger.py[line:50] INFO Had find the element //*[@id="querya"] successful 
+2021-02-02 16:47:52,507 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 16:47:52,507 logger.py[line:50] INFO Had type ' Hair Accessories ' in inputBox
+2021-02-02 16:48:09,939 logger.py[line:53] ERROR NoSuchElementException: Message: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@id="J_Goods_List"]/div[1]/a/div[1]/img"}
+  (Session info: chrome=88.0.4324.104)
+
+2021-02-02 16:48:10,371 logger.py[line:50] INFO Had take screenshot and save to folder : \screenshots
+2021-02-02 16:48:14,601 connectionpool.py[line:781] WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020BA474E4E0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/090940b519770b62e825102abb10b5e0/screenshot
+2021-02-02 16:48:16,602 connectionpool.py[line:781] WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020BA477C6D8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/090940b519770b62e825102abb10b5e0/screenshot
+2021-02-02 16:48:18,604 connectionpool.py[line:781] WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020BA477C6A0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/090940b519770b62e825102abb10b5e0/screenshot
+2021-02-02 16:48:22,751 connectionpool.py[line:781] WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020BA517B828>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/090940b519770b62e825102abb10b5e0
+2021-02-02 16:48:24,753 connectionpool.py[line:781] WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020BA517BBE0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/090940b519770b62e825102abb10b5e0
+2021-02-02 16:48:26,755 connectionpool.py[line:781] WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020BA517BDA0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/090940b519770b62e825102abb10b5e0
+2021-02-02 16:48:30,762 connectionpool.py[line:781] WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020BA517B780>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/090940b519770b62e825102abb10b5e0/screenshot
+2021-02-02 16:48:32,766 connectionpool.py[line:781] WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020BA517B438>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/090940b519770b62e825102abb10b5e0/screenshot
+2021-02-02 16:48:34,769 connectionpool.py[line:781] WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020BA517B7F0>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/090940b519770b62e825102abb10b5e0/screenshot
+2021-02-02 16:48:38,916 connectionpool.py[line:781] WARNING Retrying (Retry(total=2, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020BA528A438>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/090940b519770b62e825102abb10b5e0
+2021-02-02 16:48:40,920 connectionpool.py[line:781] WARNING Retrying (Retry(total=1, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020BA528A7B8>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/090940b519770b62e825102abb10b5e0
+2021-02-02 16:48:42,926 connectionpool.py[line:781] WARNING Retrying (Retry(total=0, connect=None, read=None, redirect=None, status=None)) after connection broken by 'NewConnectionError('<urllib3.connection.HTTPConnection object at 0x0000020BA528A160>: Failed to establish a new connection: [WinError 10061] 由于目标计算机积极拒绝，无法连接。')': /session/090940b519770b62e825102abb10b5e0
