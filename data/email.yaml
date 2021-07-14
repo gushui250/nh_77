@@ -1,0 +1,11 @@
+send_email:
+  email: 'duolaameng250@163.com'
+  pwd: GHUXCKZOKFFFHQYV
+  smtp:
+    host: smtp.163.com
+    port: 25
+  sender: yuxinxi
+receiver:
+    - 'duolaameng250@163.com'
+#    - 'guwater@126.com'
+#    - 'yuxinxi0815@gmail.com'

@@ -4,7 +4,7 @@
 # @Author: gushui
 # @Date  : 2021/7/1
 # @Desc  :
-#！/usr/bin/env python3
+# ！/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
 ===========================
@@ -23,14 +23,43 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from email.mime.image import MIMEImage
 from email.mime.application import MIMEApplication
-from scripts.handle_file import HandleFile
-from Common.constants import ALLURE_REPORTS_DIR, EMAIL_CONF_FILE_PATH
+
+
+# from scripts.handle_file import HandleFile
+# from Common.constants import ALLURE_REPORTS_DIR, EMAIL_CONF_FILE_PATH
+
+# import yagmail
+# # 使用的账号服务器
+# yag=yagmail.SMTP(user='duolaameng250@163.com',
+#                  password='GHUXCKZOKFFFHQYV',
+#                     host='smtp.163.com')
+# # 发送的正文
+# contt = ['hello,xiaoxiaobai',''''I'm solid-water ''',yagmail.inline(r'E:\project\find1\aaa\中国钱币博物馆\1.jpg')]
+
+# 发送，收件人，主题，附件
+# 收件人可以用列表抱着，可以一次发送给多个 附件也可以
+# yag.send('2770488802@qq.com','HI',contt)
+# 断开连接
+# yag.close()
 
 class HandleEmail():
 
-    def __init__(self, host="smtp.qq.com", port=25, *args, **kwargs):
-        self.host = host
-        self.port = port
+    def __init__(self, *args, **kwargs):
+        # ------加载conf/emailconf.yaml 数据----
+        dir = os.path.dirname(os.path.abspath('.'))
+        with open(rf'{dir}\data\email.yaml', "r") as f:
+            # datas = yaml.load(f, Loader=yaml.FullLoader)  # Loader=yaml.FullLoader 去除警告
+            datas = yaml.safe_load(f)
+        try:
+            self.host = datas["send_email"]['smtp']['host']
+            self.port = datas["send_email"]['smtp']['port']
+            self.email = datas["send_email"]['email']
+            self.pwd = datas["send_email"]['pwd']
+            self.receiver = datas["receiver"]
+            self.sender = datas["send_email"]['sender']
+        except Exception as err:
+            print("ERROR：\n" + str(err) + "\n")
+            print(f"请检查是否有将send_email添加到emailconf配置文件里")
 
     # 添加文本
     def add_text(self, text):
@@ -42,14 +71,15 @@ class HandleEmail():
 
     # 添加附件,图片，txt,pdf,zip
     def add_accessory(self, filepath):
-        res = MIMEText(open(filepath, "rb").read(), "base64", "utf-8")
-        res.add_header('Content-Disposition','attachment',filename=os.path.basename(filepath))
+        with open(rf'{filepath}', 'rb') as f:
+            r = f.read()
+        res = MIMEText(f"{r}", "base64", "utf-8")
+        res.add_header('Content-Disposition', 'attachment', filename=os.path.basename(filepath))
         return res
         # 添加主题 发件人，收件人
 
-    def add_subject_attach(self, send_email, receiver, subject, sender, attach_info:tuple, send_date=None):
+    def add_subject_attach(self, send_email, receiver, subject, sender, attach_info: tuple, send_date=None):
         """
-
         @param send_email: 发送方email
         @param receiver:  接收方email群发是列表形式 ["xxx@qq.com",XXXX@qq.com,....]
         @param subject: 邮件主题
@@ -62,8 +92,14 @@ class HandleEmail():
         msg = MIMEMultipart('mixed')
         msg['Subject'] = subject
         # msg['From'] = '{0} <{1}>'.format(datas["send_email"][send_email][0], send_email)
-        msg['From'] = '{0} <{1}>'.format(sender, send_email)
+        msg['From'] = '{0}<{1}>'.format(sender, send_email)
         msg['To'] = ";".join(receiver)
+
+        # print(msg['from'])
+        # input()
+
+        # message['From'] = "wumian<**********@163.com>"
+        # message['To'] = "qishi<**********@qq.com>"
         if send_date:
             msg['Date'] = send_date
         else:
@@ -73,21 +109,21 @@ class HandleEmail():
                 msg.attach(i)
         return msg
 
-
     def send_email(self, send_email, pwd, receiver, msg):
+
         try:
             smtp = smtplib.SMTP(self.host, port=self.port)
             smtp.login(send_email, pwd)
             smtp.sendmail(send_email, receiver, msg.as_string())
             print("{0}给{1}发送邮件成功,发送时间:{2}".format(send_email, receiver,
                                                   datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")))
+            smtp.quit()
         except Exception as e:
             print('SMTP Exception:\n' + str(e) + '\n')
             raise e
-        finally:
-            smtp.quit()
 
-    def send_allure_email(self,send_email,subject, report_name, send_date=None, text="本邮件由系统自动发出，无需回复！\n各位同事，大家好，以下为本次测试报告."):
+    def send_allure_email(self, send_email, subject, report_name, send_date=None,
+                          text="本邮件由系统自动发出，无需回复！\n各位同事，大家好，以下为本次测试报告."):
         """
         此方法是为公司定制发送Outputs/allure_reports的测试报告打包 群发到邮件
         数据读写的是configs/emailcof.yaml中的数据
@@ -98,19 +134,10 @@ class HandleEmail():
         @param text: 正文文本
         @return: None
         """
-        # ------加载conf/emailconf.yaml 数据----
-        with open(EMAIL_CONF_FILE_PATH, "r") as f:
-            datas = yaml.load(f, Loader=yaml.FullLoader)  # Loader=yaml.FullLoader 去除警告
-            print(datas)
-        try:
-            sender = datas["send_email"][send_email][0]
-            pwd = datas["send_email"][send_email][1]
-            receiver = datas["receiver"]
-        except Exception as err:
-            print("ERROR：\n"+str(err)+"\n")
-            print(f"请检查是否有将{send_email}添加到emailconf配置文件里")
-
         # 添加文本内容
+        pwd = self.pwd
+        receiver = self.receiver
+        sender = self.sender
         text = text
         text_plain = self.add_text(text)
         # 先将ALLURE_REPORTS_DIR打包成zip再发送附件
@@ -123,39 +150,50 @@ class HandleEmail():
         attach_info = (text_plain, zip_allure)
 
         # 添加主题,附件信息 添加到msg
-        msg = self.add_subject_attach(send_email, receiver, subject,sender, attach_info=attach_info,send_date=send_date)
+        msg = self.add_subject_attach(send_email, receiver, subject, sender, attach_info=attach_info,
+                                      send_date=send_date)
         # 发送邮件
         self.send_email(send_email, pwd, receiver, msg)
 
-    def send_public_email(self,send_email, receiver, pwd, sender, subject, send_date=None, text="",hmtl="",filepath=None):
+    def send_public_email(self, subject, text,send_date=None,  hmtl='',
+                          filepath=None):
+
+        print(text)
+
         attach_info = []
         text_plain = self.add_text(text=text)
         attach_info.append(text_plain)
         if hmtl:
-            text_html = self.add_html_text(hmtl=hmtl)
+            text_html = self.add_html_text(html=hmtl)
             attach_info.append(text_html)
-        elif filepath :
+        elif filepath:
             file_attach = self.add_accessory(filepath=filepath)
             attach_info.append(file_attach)
         # 构建附件元组
         attach_info = tuple(attach_info)
         # 添加主题和附件信息到msg
-        msg = self.add_subject_attach(send_email,receiver,subject,sender,attach_info=attach_info,send_date=send_date)
+
+        # # print(self.pwd)
+        # print(type(self.pwd))
+        # # input()
+        msg = self.add_subject_attach(send_email=self.email, receiver=self.receiver, subject=subject,
+                                      sender=self.sender, attach_info=attach_info, send_date=send_date)
         # 发送邮件
-        self.send_email(send_email, pwd, receiver, msg)
+        self.send_email(send_email=self.email, pwd=self.pwd, receiver=self.receiver, msg=msg)
 
 
-
-
+# if __name__ == '__main__':
+#     # HandleEmail().send_allure_email("17740xxxx@qq.com", "这是一封全国最帅男人的告白", "allure_测试报告")
+#     send_email = "duolaameng250@163.com"
+#     receiver = ['duolaameng250@163.com','guwater@126.com','yuxinxi0815@gmail.com']
+#     pwd = "GHUXCKZOKFFFHQYV"
+#     sender = "yuxinxi"
+#     subject = "善良哥哥就是帅"
+#     text = "我就是那么帅，走到哪里都有风.\n闾阎扑地，钟鸣鼎食之家.\n舸舰弥津，青雀黄龙之舳.\n云销雨霁，彩彻区明。落霞与孤鹜齐飞，秋水共长天一色.\n"
+#     # filepath = r"C:\Users\A\Desktop\工作文档\优惠卷代办问题.txt"
+#     HandleEmail().send_public_email(send_email, receiver, pwd, sender, subject, send_date=None, text=text,hmtl="")
 
 if __name__ == '__main__':
-    # HandleEmail().send_allure_email("17740xxxx@qq.com", "这是一封全国最帅男人的告白", "allure_测试报告")
-    send_email = "17740xxxx@qq.com"
-    receiver = ['33052xxx@qq.com','17740xxxx@qq.com','13752xxx@qq.com','renxxx@126.com']
-    pwd = "mgoiscexxxx"
-    sender = "寧·我劝你善良"
     subject = "善良哥哥就是帅"
     text = "我就是那么帅，走到哪里都有风.\n闾阎扑地，钟鸣鼎食之家.\n舸舰弥津，青雀黄龙之舳.\n云销雨霁，彩彻区明。落霞与孤鹜齐飞，秋水共长天一色.\n"
-    filepath = r"I:\python20\softwaredate\py_basics\13邮件\pycharm_win快捷键.png"
-    HandleEmail().send_public_email(send_email, receiver, pwd, sender, subject, send_date=None, text=text,hmtl="",filepath=filepath)
-    pass
+    HandleEmail().send_public_email(subject, text)
