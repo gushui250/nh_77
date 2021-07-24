@@ -6,6 +6,6 @@ send_email:
     port: 25
   sender: yuxinxi
 receiver:
-    - 'duolaameng250@163.com'
-#    - 'guwater@126.com'
+#    - 'duolaameng250@163.com'
+    - 'guwater@126.com'
 #    - 'yuxinxi0815@gmail.com'

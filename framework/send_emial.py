@@ -21,6 +21,7 @@ import yaml
 import smtplib
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
+import zipfile
 from email.mime.image import MIMEImage
 from email.mime.application import MIMEApplication
 
@@ -46,8 +47,8 @@ class HandleEmail():
 
     def __init__(self, *args, **kwargs):
         # ------加载conf/emailconf.yaml 数据----
-        dir = os.path.dirname(os.path.abspath('.'))
-        with open(rf'{dir}\data\email.yaml', "r") as f:
+        self.dir = os.path.dirname(os.path.abspath('.'))
+        with open(rf'{self.dir}\data\email.yaml', "r") as f:
             # datas = yaml.load(f, Loader=yaml.FullLoader)  # Loader=yaml.FullLoader 去除警告
             datas = yaml.safe_load(f)
         try:
@@ -60,6 +61,8 @@ class HandleEmail():
         except Exception as err:
             print("ERROR：\n" + str(err) + "\n")
             print(f"请检查是否有将send_email添加到emailconf配置文件里")
+        self.zip_package = r'E:\nh修正版\nh\report\html_20210707143621'
+        self.zip_Package_name = r'case_report.zip'
 
     # 添加文本
     def add_text(self, text):
@@ -71,9 +74,10 @@ class HandleEmail():
 
     # 添加附件,图片，txt,pdf,zip
     def add_accessory(self, filepath):
+
         with open(rf'{filepath}', 'rb') as f:
             r = f.read()
-        res = MIMEText(f"{r}", "base64", "utf-8")
+        res = MIMEText(rf"{r}", "base64", "utf-8")
         res.add_header('Content-Disposition', 'attachment', filename=os.path.basename(filepath))
         return res
         # 添加主题 发件人，收件人
@@ -95,7 +99,7 @@ class HandleEmail():
         msg['From'] = '{0}<{1}>'.format(sender, send_email)
         msg['To'] = ";".join(receiver)
 
-        # print(msg['from'])
+        # print(msg['to'])
         # input()
 
         # message['From'] = "wumian<**********@163.com>"
@@ -122,8 +126,7 @@ class HandleEmail():
             print('SMTP Exception:\n' + str(e) + '\n')
             raise e
 
-    def send_allure_email(self, send_email, subject, report_name, send_date=None,
-                          text="本邮件由系统自动发出，无需回复！\n各位同事，大家好，以下为本次测试报告."):
+    def send_allure_email(self, text="本邮件由系统自动发出，无需回复！\n各位同事，大家好，测试报告在附件"):
         """
         此方法是为公司定制发送Outputs/allure_reports的测试报告打包 群发到邮件
         数据读写的是configs/emailcof.yaml中的数据
@@ -135,27 +138,34 @@ class HandleEmail():
         @return: None
         """
         # 添加文本内容
-        pwd = self.pwd
+        send_email = self.email
         receiver = self.receiver
+        pwd = self.pwd
+        subject = '测试报告'
         sender = self.sender
+        send_date = datetime.strftime(datetime.now(), "%Y-%m-%d %H:%M:%S")
         text = text
         text_plain = self.add_text(text)
+        zip_package = self.zip_package
+        zip_package_name = self.zip_Package_name
+
         # 先将ALLURE_REPORTS_DIR打包成zip再发送附件
-        t = datetime.strftime(datetime.now(), "%Y%m%d%H%M%S_")
-        file_package_path = os.path.join(ALLURE_REPORTS_DIR, f"{t}{report_name}")
-        allure_report = HandleFile.make_package(file_package_path, "zip", ALLURE_REPORTS_DIR)
+        # allure_time = datetime.strftime(datetime.now(), "%Y%m%d%H%M%S_")
+        # file_package_path = os.path.join(ALLURE_REPORTS_DIR, f"{allure_time}{report_name}")
+        # allure_report = HandleFile.make_package(file_package_path, "zip", ALLURE_REPORTS_DIR)
         # 添加附件
+        allure_report = self.make_zip(zip_package, zip_package_name)
         zip_allure = self.add_accessory(allure_report)
         # 构建附件元组
         attach_info = (text_plain, zip_allure)
 
         # 添加主题,附件信息 添加到msg
-        msg = self.add_subject_attach(send_email, receiver, subject, sender, attach_info=attach_info,
-                                      send_date=send_date)
+        msg = self.add_subject_attach(send_email=send_email, receiver=receiver, subject=subject, sender=sender,
+                                      attach_info=attach_info, send_date=send_date)
         # 发送邮件
         self.send_email(send_email, pwd, receiver, msg)
 
-    def send_public_email(self, subject, text,send_date=None,  hmtl='',
+    def send_public_email(self, subject, text, send_date=None, hmtl='',
                           filepath=None):
 
         print(text)
@@ -181,6 +191,24 @@ class HandleEmail():
         # 发送邮件
         self.send_email(send_email=self.email, pwd=self.pwd, receiver=self.receiver, msg=msg)
 
+    def make_zip(self, source_dir, output_filename):
+        '''
+
+        :param source_dir: 放路径
+        :param output_filename: 放文件名字
+        :return: 打包文件
+        '''
+        zip_name = rf"{self.dir}\data\{output_filename}"
+        zipf = zipfile.ZipFile(zip_name, 'w')
+        pre_len = len(os.path.dirname(source_dir))
+        for parent, dirnames, filenames in os.walk(source_dir):
+            for filename in filenames:
+                pathfile = os.path.join(parent, filename)
+                arcname = pathfile[pre_len:].strip(os.path.sep)  # 相对路径
+                zipf.write(pathfile, arcname)
+        zipf.close()
+        return zip_name
+
 
 # if __name__ == '__main__':
 #     # HandleEmail().send_allure_email("17740xxxx@qq.com", "这是一封全国最帅男人的告白", "allure_测试报告")
@@ -193,7 +221,31 @@ class HandleEmail():
 #     # filepath = r"C:\Users\A\Desktop\工作文档\优惠卷代办问题.txt"
 #     HandleEmail().send_public_email(send_email, receiver, pwd, sender, subject, send_date=None, text=text,hmtl="")
 
+# if __name__ == '__main__':
+#     subject = "善良哥哥就是帅"
+#     text = "我就是那么帅，走到哪里都有风.\n闾阎扑地，钟鸣鼎食之家.\n舸舰弥津，青雀黄龙之舳.\n云销雨霁，彩彻区明。落霞与孤鹜齐飞，秋水共长天一色.\n"
+#     HandleEmail().send_public_email(subject, text)
+
 if __name__ == '__main__':
     subject = "善良哥哥就是帅"
     text = "我就是那么帅，走到哪里都有风.\n闾阎扑地，钟鸣鼎食之家.\n舸舰弥津，青雀黄龙之舳.\n云销雨霁，彩彻区明。落霞与孤鹜齐飞，秋水共长天一色.\n"
-    HandleEmail().send_public_email(subject, text)
+    HandleEmail().send_allure_email()
+
+# import os, zipfile
+#
+# dir = os.path.dirname(os.path.abspath('.'))
+#
+#
+# # 打包目录为zip文件（未压缩）
+# def make_zip(source_dir, output_filename):
+#     zip_name = rf"{dir}\data\{output_filename}"
+#     zipf = zipfile.ZipFile(zip_name, 'w')
+#     pre_len = len(os.path.dirname(source_dir))
+#     for parent, dirnames, filenames in os.walk(source_dir):
+#         for filename in filenames:
+#             pathfile = os.path.join(parent, filename)
+#             arcname = pathfile[pre_len:].strip(os.path.sep)  # 相对路径
+#             zipf.write(pathfile, arcname)
+#     zipf.close()
+#
+# make_zip(r'E:\nh修正版\nh\report', '测时1.zip')

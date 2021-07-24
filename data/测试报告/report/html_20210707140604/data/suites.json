@@ -1,0 +1,30 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "testcase",
+    "children" : [ {
+      "name" : "test_case01",
+      "children" : [ {
+        "name" : "Test_BaiduSearch",
+        "children" : [ {
+          "name" : "test01[无安全登录操作-生成订单\n]",
+          "uid" : "bcba74f6ba2822e6",
+          "parentUid" : "cab2c9c8ff78e2c0eaffc5009ca1594a",
+          "status" : "broken",
+          "time" : {
+            "start" : 1625637947938,
+            "stop" : 1625637961832,
+            "duration" : 13894
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "[{'story': [['无安全登录操作-生成订单\\n']], 'tital': [['打开网页', 'open_browser', 'https://www.nhtest.com/en/customer/account/login'], ['高级设置', 'click', 'xpath=>//*[@id=\"details-button\"]'], ['继续', 'click', 'xpath=>//*[@id=\"proceed-link\"]'], ['输入账号', 'send_keys', 'xpath=>//*[@id=\"email\"]', '2770488802@qq.com'], ['输入密码', 'send_keys', 'xpath=>//*[@id=\"password\"]', '123456'], ['点击登录', 'click', 'xpath=>//*[@id=\"saveButton\"]'], ['跳到首页', 'click', 'xpath=>//*[@id=\"g-head\"]/div/p/a'], ['跳到我的页面', 'click', 'xpath=>/html/body/div[1]/div/div/a[1]'], ['跳到my order页面', 'click', 'xpath=>/html/body/div[6]/div[1]/div/ul/li[3]/a'], ['点击我的第一个订单', 'click', 'xpath=>/html/body/div[6]/div[2]/div/div[2]/table/tbody/tr[1]/td[1]'], ['勾选全部按钮', 'click', 'xpath=>//*[@id=\"selectAllCheckbox\"]'], ['点击加入购物车', 'click', 'xpath=>/html/body/div[6]/div/div/div[2]/div[1]/div[1]/div/button'], ['点击购物车图标', 'click', 'xpath=>//*[@id=\"J_HeadCart\"]/div/a'], ['点击checkout now', 'click', 'xpath=>//*[@id=\"J_Total_Cart\"]/div[2]/div[2]/a'], ['点击pay now', 'click', 'xpath=>//*[@id=\"orderForm\"]/div/div[3]/div[2]/div[15]/button'], ['选择西联支付', 'click', 'xpath=>/html/body/div[4]/div[1]/div[1]/div[9]/div[1]/i'], ['点击pay now', 'click', 'xpath=>//*[@id=\"payJump\"]'], ['点击确定', 'click', 'xpath=>//*[@id=\"J_Card_Modal\"]/div/span[1]']]}]" ]
+        } ],
+        "uid" : "cab2c9c8ff78e2c0eaffc5009ca1594a"
+      } ],
+      "uid" : "10d260729895b9ba65f9d270ab55defe"
+    } ],
+    "uid" : "7d3977dcbf31acd3e26ecbe96342e45e"
+  } ]
+}

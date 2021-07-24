@@ -1,0 +1,22 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "testcase.test_case01",
+    "children" : [ {
+      "name" : "test01[后台设置\n]",
+      "uid" : "5f8fb59525f78ff6",
+      "parentUid" : "8be363ad87216b81654559eaaf34d9d8",
+      "status" : "broken",
+      "time" : {
+        "start" : 1625639781304,
+        "stop" : 1625639781305,
+        "duration" : 1
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "[{'story': [['后台设置\\n']], 'tital': [['高级设置', 'click', 'xpath=>//*[@id=\"details-button\"]'], ['继续', 'click', 'xpath=>//*[@id=\"proceed-link\"]'], ['打开网页', 'open_browser', 'https://www.nhjewelry.com/13/other-marketing/mall/orderSettlementInfo'], ['高级设置', 'click', 'xpath=>//*[@id=\"details-button\"]'], ['继续', 'click', 'xpath=>//*[@id=\"proceed-link\"]']]}]" ]
+    } ],
+    "uid" : "testcase.test_case01"
+  } ]
+}

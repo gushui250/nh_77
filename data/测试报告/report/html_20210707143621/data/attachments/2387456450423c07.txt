@@ -1,0 +1,1 @@
+INFO     root:logger.py:50 Now, Close and quit the browser.

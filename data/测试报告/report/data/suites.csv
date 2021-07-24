@@ -1,0 +1,19 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"broken","Tue Jul 06 11:27:49 CST 2021","Tue Jul 06 11:28:04 CST 2021","15271","testcase","test_case01","Test_BaiduSearch","","","test01[无安全登录操作
+]","
+        登录case用例
+        :param params:
+        :return:
+        "
+"broken","Tue Jul 06 11:28:05 CST 2021","Tue Jul 06 11:28:20 CST 2021","15415","testcase","test_case01","Test_BaiduSearch","","","test01[加入购物车
+]","
+        登录case用例
+        :param params:
+        :return:
+        "
+"broken","Tue Jul 06 11:28:20 CST 2021","Tue Jul 06 11:28:36 CST 2021","15214","testcase","test_case01","Test_BaiduSearch","","","test01[生成订单
+]","
+        登录case用例
+        :param params:
+        :return:
+        "
