@@ -6,7 +6,13 @@
 # @Desc  :
 import csv
 import os
+import re
+import time
+
 import pymysql, xlwt, xlrd
+import requests
+from selenium import webdriver
+
 
 def txt_excel():
     '''
@@ -119,12 +125,12 @@ class Data_(object):
         return story_num[0:]
 
 
-if __name__ == "__main__":
-    try:
-        txt_excel()
-    except:
-        pass
-    print(Data_().data03(4,5))
+# if __name__ == "__main__":
+#     try:
+#         txt_excel()
+#     except:
+#         pass
+#     print(Data_().data03(4,5))
 
 
 
@@ -164,8 +170,26 @@ if __name__ == "__main__":
 # #读取数据
 # s.close ()
 # #关闭连接
+from framework.base_page import BasePage, Del
+dir = os.path.dirname(os.path.abspath(__file__))
 
 
+with xlrd.open_workbook(fr'{dir}\444.xlsx') as t:
+    y = len(t.sheets())
+    if 1 <= y:
+        sheet = t.sheets()[1 - 1]
+        for i in range(sheet.nrows):
+             for i in sheet.row_values(i) :
+                 url = i
+                 res = requests.get(url)
+                 # html=res.content.decode('utf-8')
+                 html_1 = res.status_code
+
+                 if html_1 != 200:
+                     # print(res.json())
+                     print(url)
+                     # input('//')
+                     time.sleep(0.2)
 
 
 
